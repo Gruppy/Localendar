@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ED098F581A8B47630071E193"
+               BlueprintIdentifier = "ED1E3CBD1A8B63EE00DD66FA"
                BuildableName = "LocalendarApp.app"
                BlueprintName = "LocalendarApp"
                ReferencedContainer = "container:LocalendarApp.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ED098F711A8B47630071E193"
+               BlueprintIdentifier = "ED1E3CD61A8B63EF00DD66FA"
                BuildableName = "LocalendarAppTests.xctest"
                BlueprintName = "LocalendarAppTests"
                ReferencedContainer = "container:LocalendarApp.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ED098F711A8B47630071E193"
+               BlueprintIdentifier = "ED1E3CD61A8B63EF00DD66FA"
                BuildableName = "LocalendarAppTests.xctest"
                BlueprintName = "LocalendarAppTests"
                ReferencedContainer = "container:LocalendarApp.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ED098F581A8B47630071E193"
+            BlueprintIdentifier = "ED1E3CBD1A8B63EE00DD66FA"
             BuildableName = "LocalendarApp.app"
             BlueprintName = "LocalendarApp"
             ReferencedContainer = "container:LocalendarApp.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ED098F581A8B47630071E193"
+            BlueprintIdentifier = "ED1E3CBD1A8B63EE00DD66FA"
             BuildableName = "LocalendarApp.app"
             BlueprintName = "LocalendarApp"
             ReferencedContainer = "container:LocalendarApp.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ED098F581A8B47630071E193"
+            BlueprintIdentifier = "ED1E3CBD1A8B63EE00DD66FA"
             BuildableName = "LocalendarApp.app"
             BlueprintName = "LocalendarApp"
             ReferencedContainer = "container:LocalendarApp.xcodeproj">

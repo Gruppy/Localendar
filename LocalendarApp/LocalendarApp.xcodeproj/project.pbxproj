@@ -7,50 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED098F5F1A8B47630071E193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED098F5E1A8B47630071E193 /* main.m */; };
-		ED098F621A8B47630071E193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED098F611A8B47630071E193 /* AppDelegate.m */; };
-		ED098F651A8B47630071E193 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED098F641A8B47630071E193 /* ViewController.m */; };
-		ED098F681A8B47630071E193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED098F661A8B47630071E193 /* Main.storyboard */; };
-		ED098F6A1A8B47630071E193 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED098F691A8B47630071E193 /* Images.xcassets */; };
-		ED098F6D1A8B47630071E193 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED098F6B1A8B47630071E193 /* LaunchScreen.xib */; };
-		ED098F791A8B47630071E193 /* LocalendarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED098F781A8B47630071E193 /* LocalendarAppTests.m */; };
+		ED1E3CC41A8B63EE00DD66FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1E3CC31A8B63EE00DD66FA /* main.m */; };
+		ED1E3CC71A8B63EE00DD66FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1E3CC61A8B63EE00DD66FA /* AppDelegate.m */; };
+		ED1E3CCD1A8B63EE00DD66FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1E3CCB1A8B63EE00DD66FA /* Main.storyboard */; };
+		ED1E3CCF1A8B63EE00DD66FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1E3CCE1A8B63EE00DD66FA /* Images.xcassets */; };
+		ED1E3CD21A8B63EE00DD66FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1E3CD01A8B63EE00DD66FA /* LaunchScreen.xib */; };
+		ED1E3CDE1A8B63EF00DD66FA /* LocalendarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1E3CDD1A8B63EF00DD66FA /* LocalendarAppTests.m */; };
+		ED1E3CE91A8B641300DD66FA /* LOCEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1E3CE81A8B641300DD66FA /* LOCEventsViewController.m */; };
+		EDB1C2711A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB1C26F1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m */; };
+		EDB1C2721A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB1C2701A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ED098F731A8B47630071E193 /* PBXContainerItemProxy */ = {
+		ED1E3CD81A8B63EF00DD66FA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = ED098F511A8B47630071E193 /* Project object */;
+			containerPortal = ED1E3CB61A8B63EE00DD66FA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ED098F581A8B47630071E193;
+			remoteGlobalIDString = ED1E3CBD1A8B63EE00DD66FA;
 			remoteInfo = LocalendarApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ED098F591A8B47630071E193 /* LocalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED098F5D1A8B47630071E193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED098F5E1A8B47630071E193 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ED098F601A8B47630071E193 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		ED098F611A8B47630071E193 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ED098F631A8B47630071E193 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ED098F641A8B47630071E193 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		ED098F671A8B47630071E193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ED098F691A8B47630071E193 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		ED098F6C1A8B47630071E193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		ED098F721A8B47630071E193 /* LocalendarAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalendarAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED098F771A8B47630071E193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED098F781A8B47630071E193 /* LocalendarAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalendarAppTests.m; sourceTree = "<group>"; };
+		ED1E3CBE1A8B63EE00DD66FA /* LocalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1E3CC21A8B63EE00DD66FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED1E3CC31A8B63EE00DD66FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED1E3CC51A8B63EE00DD66FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ED1E3CC61A8B63EE00DD66FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ED1E3CCC1A8B63EE00DD66FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED1E3CCE1A8B63EE00DD66FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ED1E3CD11A8B63EE00DD66FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ED1E3CD71A8B63EF00DD66FA /* LocalendarAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalendarAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1E3CDC1A8B63EF00DD66FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED1E3CDD1A8B63EF00DD66FA /* LocalendarAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalendarAppTests.m; sourceTree = "<group>"; };
+		ED1E3CE71A8B641300DD66FA /* LOCEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCEventsViewController.h; sourceTree = "<group>"; };
+		ED1E3CE81A8B641300DD66FA /* LOCEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCEventsViewController.m; sourceTree = "<group>"; };
+		EDB1C26E1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCEventTableViewCell.h; sourceTree = "<group>"; };
+		EDB1C26F1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCEventTableViewCell.m; sourceTree = "<group>"; };
+		EDB1C2701A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LOCEventTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ED098F561A8B47630071E193 /* Frameworks */ = {
+		ED1E3CBB1A8B63EE00DD66FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED098F6F1A8B47630071E193 /* Frameworks */ = {
+		ED1E3CD41A8B63EF00DD66FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,61 +65,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ED098F501A8B47630071E193 = {
+		ED1E3CB51A8B63EE00DD66FA = {
 			isa = PBXGroup;
 			children = (
-				ED098F5B1A8B47630071E193 /* LocalendarApp */,
-				ED098F751A8B47630071E193 /* LocalendarAppTests */,
-				ED098F5A1A8B47630071E193 /* Products */,
+				ED1E3CC01A8B63EE00DD66FA /* LocalendarApp */,
+				ED1E3CDA1A8B63EF00DD66FA /* LocalendarAppTests */,
+				ED1E3CBF1A8B63EE00DD66FA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ED098F5A1A8B47630071E193 /* Products */ = {
+		ED1E3CBF1A8B63EE00DD66FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED098F591A8B47630071E193 /* LocalendarApp.app */,
-				ED098F721A8B47630071E193 /* LocalendarAppTests.xctest */,
+				ED1E3CBE1A8B63EE00DD66FA /* LocalendarApp.app */,
+				ED1E3CD71A8B63EF00DD66FA /* LocalendarAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED098F5B1A8B47630071E193 /* LocalendarApp */ = {
+		ED1E3CC01A8B63EE00DD66FA /* LocalendarApp */ = {
 			isa = PBXGroup;
 			children = (
-				ED098F601A8B47630071E193 /* AppDelegate.h */,
-				ED098F611A8B47630071E193 /* AppDelegate.m */,
-				ED098F631A8B47630071E193 /* ViewController.h */,
-				ED098F641A8B47630071E193 /* ViewController.m */,
-				ED098F661A8B47630071E193 /* Main.storyboard */,
-				ED098F691A8B47630071E193 /* Images.xcassets */,
-				ED098F6B1A8B47630071E193 /* LaunchScreen.xib */,
-				ED098F5C1A8B47630071E193 /* Supporting Files */,
+				ED1E3CCB1A8B63EE00DD66FA /* Main.storyboard */,
+				ED1E3CC51A8B63EE00DD66FA /* AppDelegate.h */,
+				ED1E3CC61A8B63EE00DD66FA /* AppDelegate.m */,
+				ED1E3CE71A8B641300DD66FA /* LOCEventsViewController.h */,
+				ED1E3CE81A8B641300DD66FA /* LOCEventsViewController.m */,
+				EDB1C26E1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.h */,
+				EDB1C26F1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m */,
+				EDB1C2701A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib */,
+				ED1E3CCE1A8B63EE00DD66FA /* Images.xcassets */,
+				ED1E3CD01A8B63EE00DD66FA /* LaunchScreen.xib */,
+				ED1E3CC11A8B63EE00DD66FA /* Supporting Files */,
 			);
 			path = LocalendarApp;
 			sourceTree = "<group>";
 		};
-		ED098F5C1A8B47630071E193 /* Supporting Files */ = {
+		ED1E3CC11A8B63EE00DD66FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				ED098F5D1A8B47630071E193 /* Info.plist */,
-				ED098F5E1A8B47630071E193 /* main.m */,
+				ED1E3CC21A8B63EE00DD66FA /* Info.plist */,
+				ED1E3CC31A8B63EE00DD66FA /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		ED098F751A8B47630071E193 /* LocalendarAppTests */ = {
+		ED1E3CDA1A8B63EF00DD66FA /* LocalendarAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				ED098F781A8B47630071E193 /* LocalendarAppTests.m */,
-				ED098F761A8B47630071E193 /* Supporting Files */,
+				ED1E3CDD1A8B63EF00DD66FA /* LocalendarAppTests.m */,
+				ED1E3CDB1A8B63EF00DD66FA /* Supporting Files */,
 			);
 			path = LocalendarAppTests;
 			sourceTree = "<group>";
 		};
-		ED098F761A8B47630071E193 /* Supporting Files */ = {
+		ED1E3CDB1A8B63EF00DD66FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				ED098F771A8B47630071E193 /* Info.plist */,
+				ED1E3CDC1A8B63EF00DD66FA /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,13 +130,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED098F581A8B47630071E193 /* LocalendarApp */ = {
+		ED1E3CBD1A8B63EE00DD66FA /* LocalendarApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED098F7C1A8B47630071E193 /* Build configuration list for PBXNativeTarget "LocalendarApp" */;
+			buildConfigurationList = ED1E3CE11A8B63EF00DD66FA /* Build configuration list for PBXNativeTarget "LocalendarApp" */;
 			buildPhases = (
-				ED098F551A8B47630071E193 /* Sources */,
-				ED098F561A8B47630071E193 /* Frameworks */,
-				ED098F571A8B47630071E193 /* Resources */,
+				ED1E3CBA1A8B63EE00DD66FA /* Sources */,
+				ED1E3CBB1A8B63EE00DD66FA /* Frameworks */,
+				ED1E3CBC1A8B63EE00DD66FA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -136,46 +144,46 @@
 			);
 			name = LocalendarApp;
 			productName = LocalendarApp;
-			productReference = ED098F591A8B47630071E193 /* LocalendarApp.app */;
+			productReference = ED1E3CBE1A8B63EE00DD66FA /* LocalendarApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ED098F711A8B47630071E193 /* LocalendarAppTests */ = {
+		ED1E3CD61A8B63EF00DD66FA /* LocalendarAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED098F7F1A8B47630071E193 /* Build configuration list for PBXNativeTarget "LocalendarAppTests" */;
+			buildConfigurationList = ED1E3CE41A8B63EF00DD66FA /* Build configuration list for PBXNativeTarget "LocalendarAppTests" */;
 			buildPhases = (
-				ED098F6E1A8B47630071E193 /* Sources */,
-				ED098F6F1A8B47630071E193 /* Frameworks */,
-				ED098F701A8B47630071E193 /* Resources */,
+				ED1E3CD31A8B63EF00DD66FA /* Sources */,
+				ED1E3CD41A8B63EF00DD66FA /* Frameworks */,
+				ED1E3CD51A8B63EF00DD66FA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				ED098F741A8B47630071E193 /* PBXTargetDependency */,
+				ED1E3CD91A8B63EF00DD66FA /* PBXTargetDependency */,
 			);
 			name = LocalendarAppTests;
 			productName = LocalendarAppTests;
-			productReference = ED098F721A8B47630071E193 /* LocalendarAppTests.xctest */;
+			productReference = ED1E3CD71A8B63EF00DD66FA /* LocalendarAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ED098F511A8B47630071E193 /* Project object */ = {
+		ED1E3CB61A8B63EE00DD66FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Gruppy;
 				TargetAttributes = {
-					ED098F581A8B47630071E193 = {
+					ED1E3CBD1A8B63EE00DD66FA = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					ED098F711A8B47630071E193 = {
+					ED1E3CD61A8B63EF00DD66FA = {
 						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = ED098F581A8B47630071E193;
+						TestTargetID = ED1E3CBD1A8B63EE00DD66FA;
 					};
 				};
 			};
-			buildConfigurationList = ED098F541A8B47630071E193 /* Build configuration list for PBXProject "LocalendarApp" */;
+			buildConfigurationList = ED1E3CB91A8B63EE00DD66FA /* Build configuration list for PBXProject "LocalendarApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -183,29 +191,30 @@
 				en,
 				Base,
 			);
-			mainGroup = ED098F501A8B47630071E193;
-			productRefGroup = ED098F5A1A8B47630071E193 /* Products */;
+			mainGroup = ED1E3CB51A8B63EE00DD66FA;
+			productRefGroup = ED1E3CBF1A8B63EE00DD66FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED098F581A8B47630071E193 /* LocalendarApp */,
-				ED098F711A8B47630071E193 /* LocalendarAppTests */,
+				ED1E3CBD1A8B63EE00DD66FA /* LocalendarApp */,
+				ED1E3CD61A8B63EF00DD66FA /* LocalendarAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ED098F571A8B47630071E193 /* Resources */ = {
+		ED1E3CBC1A8B63EE00DD66FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED098F681A8B47630071E193 /* Main.storyboard in Resources */,
-				ED098F6D1A8B47630071E193 /* LaunchScreen.xib in Resources */,
-				ED098F6A1A8B47630071E193 /* Images.xcassets in Resources */,
+				ED1E3CCD1A8B63EE00DD66FA /* Main.storyboard in Resources */,
+				EDB1C2721A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib in Resources */,
+				ED1E3CD21A8B63EE00DD66FA /* LaunchScreen.xib in Resources */,
+				ED1E3CCF1A8B63EE00DD66FA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED098F701A8B47630071E193 /* Resources */ = {
+		ED1E3CD51A8B63EF00DD66FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,47 +224,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ED098F551A8B47630071E193 /* Sources */ = {
+		ED1E3CBA1A8B63EE00DD66FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED098F651A8B47630071E193 /* ViewController.m in Sources */,
-				ED098F621A8B47630071E193 /* AppDelegate.m in Sources */,
-				ED098F5F1A8B47630071E193 /* main.m in Sources */,
+				ED1E3CC71A8B63EE00DD66FA /* AppDelegate.m in Sources */,
+				EDB1C2711A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m in Sources */,
+				ED1E3CE91A8B641300DD66FA /* LOCEventsViewController.m in Sources */,
+				ED1E3CC41A8B63EE00DD66FA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED098F6E1A8B47630071E193 /* Sources */ = {
+		ED1E3CD31A8B63EF00DD66FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED098F791A8B47630071E193 /* LocalendarAppTests.m in Sources */,
+				ED1E3CDE1A8B63EF00DD66FA /* LocalendarAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ED098F741A8B47630071E193 /* PBXTargetDependency */ = {
+		ED1E3CD91A8B63EF00DD66FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ED098F581A8B47630071E193 /* LocalendarApp */;
-			targetProxy = ED098F731A8B47630071E193 /* PBXContainerItemProxy */;
+			target = ED1E3CBD1A8B63EE00DD66FA /* LocalendarApp */;
+			targetProxy = ED1E3CD81A8B63EF00DD66FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ED098F661A8B47630071E193 /* Main.storyboard */ = {
+		ED1E3CCB1A8B63EE00DD66FA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED098F671A8B47630071E193 /* Base */,
+				ED1E3CCC1A8B63EE00DD66FA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		ED098F6B1A8B47630071E193 /* LaunchScreen.xib */ = {
+		ED1E3CD01A8B63EE00DD66FA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED098F6C1A8B47630071E193 /* Base */,
+				ED1E3CD11A8B63EE00DD66FA /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -263,7 +273,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		ED098F7A1A8B47630071E193 /* Debug */ = {
+		ED1E3CDF1A8B63EF00DD66FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -305,7 +315,7 @@
 			};
 			name = Debug;
 		};
-		ED098F7B1A8B47630071E193 /* Release */ = {
+		ED1E3CE01A8B63EF00DD66FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -341,7 +351,7 @@
 			};
 			name = Release;
 		};
-		ED098F7D1A8B47630071E193 /* Debug */ = {
+		ED1E3CE21A8B63EF00DD66FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -351,7 +361,7 @@
 			};
 			name = Debug;
 		};
-		ED098F7E1A8B47630071E193 /* Release */ = {
+		ED1E3CE31A8B63EF00DD66FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -361,7 +371,7 @@
 			};
 			name = Release;
 		};
-		ED098F801A8B47630071E193 /* Debug */ = {
+		ED1E3CE51A8B63EF00DD66FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -380,7 +390,7 @@
 			};
 			name = Debug;
 		};
-		ED098F811A8B47630071E193 /* Release */ = {
+		ED1E3CE61A8B63EF00DD66FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,32 +408,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED098F541A8B47630071E193 /* Build configuration list for PBXProject "LocalendarApp" */ = {
+		ED1E3CB91A8B63EE00DD66FA /* Build configuration list for PBXProject "LocalendarApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED098F7A1A8B47630071E193 /* Debug */,
-				ED098F7B1A8B47630071E193 /* Release */,
+				ED1E3CDF1A8B63EF00DD66FA /* Debug */,
+				ED1E3CE01A8B63EF00DD66FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED098F7C1A8B47630071E193 /* Build configuration list for PBXNativeTarget "LocalendarApp" */ = {
+		ED1E3CE11A8B63EF00DD66FA /* Build configuration list for PBXNativeTarget "LocalendarApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED098F7D1A8B47630071E193 /* Debug */,
-				ED098F7E1A8B47630071E193 /* Release */,
+				ED1E3CE21A8B63EF00DD66FA /* Debug */,
+				ED1E3CE31A8B63EF00DD66FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		ED098F7F1A8B47630071E193 /* Build configuration list for PBXNativeTarget "LocalendarAppTests" */ = {
+		ED1E3CE41A8B63EF00DD66FA /* Build configuration list for PBXNativeTarget "LocalendarAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED098F801A8B47630071E193 /* Debug */,
-				ED098F811A8B47630071E193 /* Release */,
+				ED1E3CE51A8B63EF00DD66FA /* Debug */,
+				ED1E3CE61A8B63EF00DD66FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ED098F511A8B47630071E193 /* Project object */;
+	rootObject = ED1E3CB61A8B63EE00DD66FA /* Project object */;
 }
