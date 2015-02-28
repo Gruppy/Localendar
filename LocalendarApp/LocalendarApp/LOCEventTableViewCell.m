@@ -10,7 +10,8 @@
 
 @implementation LOCEventTableViewCell
 
-- (void)awakeFromNib {
+- (void)awakeFromNib
+{
     // Initialization code
 }
 

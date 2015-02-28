@@ -15,7 +15,7 @@
 @property (nonatomic, retain) NSString *date;
 @property (nonatomic, retain) NSString *time;
 @property (nonatomic, retain) NSString *location;
-@property (nonatomic, retain) NSString *coverImageURL;
+@property (nonatomic, retain) NSString *eventImage;
 @property (nonatomic, retain) NSString *descriptionText;
 
 @property (nonatomic, retain) NSNumber *isBookmarked;

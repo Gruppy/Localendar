@@ -15,6 +15,7 @@
 		ED1E3CD21A8B63EE00DD66FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1E3CD01A8B63EE00DD66FA /* LaunchScreen.xib */; };
 		ED1E3CDE1A8B63EF00DD66FA /* LocalendarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1E3CDD1A8B63EF00DD66FA /* LocalendarAppTests.m */; };
 		ED1E3CE91A8B641300DD66FA /* LOCEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1E3CE81A8B641300DD66FA /* LOCEventsViewController.m */; };
+		ED925F921AA189660043DFE6 /* LOCEventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED925F911AA189660043DFE6 /* LOCEventDetailViewController.m */; };
 		EDB1C2711A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB1C26F1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m */; };
 		EDB1C2721A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB1C2701A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib */; };
 		EDC0C5101A98C1F500F5ACF0 /* LOCEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC0C50F1A98C1F500F5ACF0 /* LOCEvent.m */; };
@@ -46,6 +47,8 @@
 		ED1E3CDD1A8B63EF00DD66FA /* LocalendarAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalendarAppTests.m; sourceTree = "<group>"; };
 		ED1E3CE71A8B641300DD66FA /* LOCEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCEventsViewController.h; sourceTree = "<group>"; };
 		ED1E3CE81A8B641300DD66FA /* LOCEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCEventsViewController.m; sourceTree = "<group>"; };
+		ED925F901AA189660043DFE6 /* LOCEventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCEventDetailViewController.h; sourceTree = "<group>"; };
+		ED925F911AA189660043DFE6 /* LOCEventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCEventDetailViewController.m; sourceTree = "<group>"; };
 		EDB1C26E1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCEventTableViewCell.h; sourceTree = "<group>"; };
 		EDB1C26F1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCEventTableViewCell.m; sourceTree = "<group>"; };
 		EDB1C2701A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LOCEventTableViewCell.xib; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				EDC0C50F1A98C1F500F5ACF0 /* LOCEvent.m */,
 				ED1E3CE71A8B641300DD66FA /* LOCEventsViewController.h */,
 				ED1E3CE81A8B641300DD66FA /* LOCEventsViewController.m */,
+				ED925F901AA189660043DFE6 /* LOCEventDetailViewController.h */,
+				ED925F911AA189660043DFE6 /* LOCEventDetailViewController.m */,
 				EDB1C26E1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.h */,
 				EDB1C26F1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m */,
 				EDB1C2701A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					ED1E3CBD1A8B63EE00DD66FA = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 6VN9BH57R7;
 					};
 					ED1E3CD61A8B63EF00DD66FA = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -293,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED1E3CC71A8B63EE00DD66FA /* AppDelegate.m in Sources */,
+				ED925F921AA189660043DFE6 /* LOCEventDetailViewController.m in Sources */,
 				EDB1C2711A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m in Sources */,
 				EDC0C5101A98C1F500F5ACF0 /* LOCEvent.m in Sources */,
 				ED1E3CE91A8B641300DD66FA /* LOCEventsViewController.m in Sources */,
@@ -355,6 +362,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -397,6 +405,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -421,9 +430,12 @@
 			baseConfigurationReference = F070049017508FB66F9B99B5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LocalendarApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -432,9 +444,12 @@
 			baseConfigurationReference = 80D71BA69ECFD0D4A8D59133 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LocalendarApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

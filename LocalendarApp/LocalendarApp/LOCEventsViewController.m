@@ -7,15 +7,15 @@
 //
 
 #import "LOCEventsViewController.h"
+#import "LOCEventDetailViewController.h"
 #import "LOCEventTableViewCell.h"
 #import "LOCEvent.h"
 #import "AFHTTPRequestOperationManager.h"
 
-@interface LOCEventsViewController () <UITableViewDataSource, UITabBarDelegate>
+@interface LOCEventsViewController () <UITableViewDataSource, UITableViewDelegate>
 {
     NSMutableArray *_events;
-    LOCEvent *_event;
-    NSMutableArray *_properties;
+    LOCEvent *_selectedEvent;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *eventsTableView;
@@ -30,6 +30,7 @@ static NSString *const kLOCBaseURL = @"http://192.168.33.10/events.json";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"LOCAL";
     [self.eventsTableView registerNib:[UINib nibWithNibName:@"LOCEventTableViewCell" bundle:nil] forCellReuseIdentifier:@"LOCEventTableViewCell"];
     [self loadEvents];
 }
@@ -55,6 +56,9 @@ static NSString *const kLOCBaseURL = @"http://192.168.33.10/events.json";
     
     if (_events) {
         LOCEvent *eventAtIndexPath = _events[indexPath.row];
+        
+        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:eventAtIndexPath.eventImage]];
+        cell.eventImageView.image = [[UIImage alloc] initWithData:data];
         cell.titleLabel.text = eventAtIndexPath.title;
         cell.dateLabel.text = eventAtIndexPath.date;
         cell.timeLabel.text = eventAtIndexPath.time;
@@ -67,6 +71,12 @@ static NSString *const kLOCBaseURL = @"http://192.168.33.10/events.json";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return [LOCEventTableViewCell cellHeight];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    _selectedEvent = _events[indexPath.row];
+    [self performSegueWithIdentifier:@"ToEventDetail" sender:self];
 }
 
 #pragma mark - Data
@@ -98,10 +108,20 @@ static NSString *const kLOCBaseURL = @"http://192.168.33.10/events.json";
     event.date = JSONDic[@"date"];
     event.time = JSONDic[@"time"];
     event.location = JSONDic[@"location"];
-    event.coverImageURL = JSONDic[@"cover_image"];
+    event.eventImage = JSONDic[@"image"];
     event.url = [JSONDic[@"url"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 
     return event;
+}
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"ToEventDetail"]) {
+        LOCEventDetailViewController *controller = segue.destinationViewController;
+        controller.event = _selectedEvent;
+    }
 }
 
 @end
