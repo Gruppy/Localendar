@@ -16,6 +16,10 @@
 		ED1E3CDE1A8B63EF00DD66FA /* LocalendarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1E3CDD1A8B63EF00DD66FA /* LocalendarAppTests.m */; };
 		ED1E3CE91A8B641300DD66FA /* LOCEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1E3CE81A8B641300DD66FA /* LOCEventsViewController.m */; };
 		ED925F921AA189660043DFE6 /* LOCEventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED925F911AA189660043DFE6 /* LOCEventDetailViewController.m */; };
+		ED95816F1AA2D42100EA19FB /* date.png in Resources */ = {isa = PBXBuildFile; fileRef = ED95816E1AA2D42100EA19FB /* date.png */; };
+		ED9581711AA2D42D00EA19FB /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9581701AA2D42D00EA19FB /* time.png */; };
+		ED9581731AA2D43600EA19FB /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9581721AA2D43600EA19FB /* location.png */; };
+		ED9581751AA2D43F00EA19FB /* url.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9581741AA2D43F00EA19FB /* url.png */; };
 		EDB1C2711A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB1C26F1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m */; };
 		EDB1C2721A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB1C2701A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib */; };
 		EDC0C5101A98C1F500F5ACF0 /* LOCEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC0C50F1A98C1F500F5ACF0 /* LOCEvent.m */; };
@@ -49,6 +53,10 @@
 		ED1E3CE81A8B641300DD66FA /* LOCEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCEventsViewController.m; sourceTree = "<group>"; };
 		ED925F901AA189660043DFE6 /* LOCEventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCEventDetailViewController.h; sourceTree = "<group>"; };
 		ED925F911AA189660043DFE6 /* LOCEventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCEventDetailViewController.m; sourceTree = "<group>"; };
+		ED95816E1AA2D42100EA19FB /* date.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date.png; sourceTree = "<group>"; };
+		ED9581701AA2D42D00EA19FB /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time.png; sourceTree = "<group>"; };
+		ED9581721AA2D43600EA19FB /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		ED9581741AA2D43F00EA19FB /* url.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = url.png; sourceTree = "<group>"; };
 		EDB1C26E1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCEventTableViewCell.h; sourceTree = "<group>"; };
 		EDB1C26F1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCEventTableViewCell.m; sourceTree = "<group>"; };
 		EDB1C2701A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LOCEventTableViewCell.xib; sourceTree = "<group>"; };
@@ -138,6 +146,10 @@
 		ED1E3CC11A8B63EE00DD66FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED9581741AA2D43F00EA19FB /* url.png */,
+				ED9581721AA2D43600EA19FB /* location.png */,
+				ED9581701AA2D42D00EA19FB /* time.png */,
+				ED95816E1AA2D42100EA19FB /* date.png */,
 				ED1E3CC21A8B63EE00DD66FA /* Info.plist */,
 				ED1E3CC31A8B63EE00DD66FA /* main.m */,
 			);
@@ -245,9 +257,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED1E3CCD1A8B63EE00DD66FA /* Main.storyboard in Resources */,
+				ED9581731AA2D43600EA19FB /* location.png in Resources */,
+				ED9581711AA2D42D00EA19FB /* time.png in Resources */,
 				EDB1C2721A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib in Resources */,
 				ED1E3CD21A8B63EE00DD66FA /* LaunchScreen.xib in Resources */,
 				ED1E3CCF1A8B63EE00DD66FA /* Images.xcassets in Resources */,
+				ED95816F1AA2D42100EA19FB /* date.png in Resources */,
+				ED9581751AA2D43F00EA19FB /* url.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

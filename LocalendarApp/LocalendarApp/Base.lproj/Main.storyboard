@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="154" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0ln-1Y-lzf">
-                                <rect key="frame" x="0.0" y="21" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="601"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="QnR-jl-hGx"/>
@@ -55,57 +55,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOO-qz-9aS">
-                                <rect key="frame" x="10" y="75" width="581" height="293"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOO-qz-9aS">
+                                <rect key="frame" x="10" y="75" width="581" height="278"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="278" id="7mc-al-7lT"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FP-Xi-Xbe">
-                                <rect key="frame" x="47" y="384" width="537" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FP-Xi-Xbe">
+                                <rect key="frame" x="47" y="368" width="537" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZSZ-hy-qOe">
-                                <rect key="frame" x="16" y="384" width="21" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="date.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZSZ-hy-qOe">
+                                <rect key="frame" x="16" y="368" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EP6-jI-62Q"/>
+                                    <constraint firstAttribute="width" constant="21" id="iMp-iq-g41"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcD-eQ-5wS">
-                                <rect key="frame" x="47" y="421" width="537" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcD-eQ-5wS">
+                                <rect key="frame" x="47" y="405" width="537" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RBH-fn-KRV">
-                                <rect key="frame" x="16" y="421" width="21" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="RBH-fn-KRV">
+                                <rect key="frame" x="16" y="405" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Zjo-Hb-uJc"/>
+                                    <constraint firstAttribute="width" constant="21" id="tIB-Ls-u3q"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAD-ib-CyU">
-                                <rect key="frame" x="47" y="458" width="537" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAD-ib-CyU">
+                                <rect key="frame" x="47" y="442" width="537" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uYL-0g-rMi">
-                                <rect key="frame" x="16" y="458" width="21" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.png" translatesAutoresizingMaskIntoConstraints="NO" id="uYL-0g-rMi">
+                                <rect key="frame" x="16" y="442" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="FgH-4b-rdh"/>
+                                    <constraint firstAttribute="width" constant="21" id="wyx-WU-ni1"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="URL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHZ-Yl-HC4">
-                                <rect key="frame" x="47" y="495" width="537" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHZ-Yl-HC4">
+                                <rect key="frame" x="47" y="479" width="537" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hln-9U-Ubr">
-                                <rect key="frame" x="16" y="495" width="21" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="url.png" translatesAutoresizingMaskIntoConstraints="NO" id="hln-9U-Ubr">
+                                <rect key="frame" x="16" y="479" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="dtr-Lh-wAW"/>
+                                    <constraint firstAttribute="height" constant="21" id="xZh-rd-Cnz"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wOO-qz-9aS" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="10" id="21r-C1-vjn"/>
                             <constraint firstAttribute="trailing" secondItem="fAD-ib-CyU" secondAttribute="trailing" constant="16" id="4ih-g8-s14"/>
+                            <constraint firstItem="mcD-eQ-5wS" firstAttribute="top" secondItem="1FP-Xi-Xbe" secondAttribute="bottom" constant="16" id="8hW-YU-CsE"/>
+                            <constraint firstAttribute="bottom" secondItem="mcD-eQ-5wS" secondAttribute="bottom" constant="158" id="BRZ-6w-AfZ"/>
                             <constraint firstItem="mcD-eQ-5wS" firstAttribute="leading" secondItem="RBH-fn-KRV" secondAttribute="trailing" constant="10" id="Ccj-JY-x4y"/>
                             <constraint firstAttribute="trailing" secondItem="mcD-eQ-5wS" secondAttribute="trailing" constant="16" id="H76-Dj-FTm"/>
                             <constraint firstItem="1FP-Xi-Xbe" firstAttribute="leading" secondItem="ZSZ-hy-qOe" secondAttribute="trailing" constant="10" id="HaT-gy-W9u"/>
                             <constraint firstItem="RBH-fn-KRV" firstAttribute="top" secondItem="ZSZ-hy-qOe" secondAttribute="bottom" constant="16" id="LxX-2y-Eyg"/>
+                            <constraint firstItem="mcD-eQ-5wS" firstAttribute="top" secondItem="RBH-fn-KRV" secondAttribute="top" id="MIB-Z2-Tja"/>
                             <constraint firstItem="ZSZ-hy-qOe" firstAttribute="top" secondItem="wOO-qz-9aS" secondAttribute="bottom" constant="16" id="NIw-8B-Qyk"/>
+                            <constraint firstItem="fAD-ib-CyU" firstAttribute="top" secondItem="mcD-eQ-5wS" secondAttribute="bottom" constant="16" id="RID-as-oAS"/>
                             <constraint firstItem="uYL-0g-rMi" firstAttribute="top" secondItem="RBH-fn-KRV" secondAttribute="bottom" constant="16" id="Syz-TF-4A5"/>
                             <constraint firstItem="fAD-ib-CyU" firstAttribute="leading" secondItem="uYL-0g-rMi" secondAttribute="trailing" constant="10" id="T58-jZ-2ZP"/>
+                            <constraint firstItem="GHZ-Yl-HC4" firstAttribute="top" secondItem="hln-9U-Ubr" secondAttribute="top" id="WAj-QC-cIk"/>
                             <constraint firstItem="RBH-fn-KRV" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="16" id="Z8b-3c-OJv"/>
                             <constraint firstItem="GHZ-Yl-HC4" firstAttribute="leading" secondItem="hln-9U-Ubr" secondAttribute="trailing" constant="10" id="b46-2l-Vrr"/>
                             <constraint firstAttribute="trailing" secondItem="GHZ-Yl-HC4" secondAttribute="trailing" constant="16" id="bDo-Fg-Nv7"/>
@@ -117,6 +141,11 @@
                             <constraint firstItem="hln-9U-Ubr" firstAttribute="top" secondItem="uYL-0g-rMi" secondAttribute="bottom" constant="16" id="o6x-eM-p6L"/>
                             <constraint firstItem="uYL-0g-rMi" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="16" id="pSo-Wz-uMR"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BRZ-6w-AfZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="gZN-sa-7P5"/>
                     <connections>
@@ -154,4 +183,10 @@
             <point key="canvasLocation" x="16" y="-327"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="date.png" width="64" height="64"/>
+        <image name="location.png" width="64" height="64"/>
+        <image name="time.png" width="64" height="64"/>
+        <image name="url.png" width="64" height="64"/>
+    </resources>
 </document>

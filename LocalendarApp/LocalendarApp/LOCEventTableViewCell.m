@@ -12,7 +12,7 @@
 
 - (void)awakeFromNib
 {
-    // Initialization code
+    [super awakeFromNib];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -22,7 +22,7 @@
 
 + (float)cellHeight
 {
-    return 257;
+    return 270;
 }
 
 @end
