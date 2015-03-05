@@ -15,6 +15,7 @@
 		ED1E3CD21A8B63EE00DD66FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1E3CD01A8B63EE00DD66FA /* LaunchScreen.xib */; };
 		ED1E3CDE1A8B63EF00DD66FA /* LocalendarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1E3CDD1A8B63EF00DD66FA /* LocalendarAppTests.m */; };
 		ED1E3CE91A8B641300DD66FA /* LOCEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1E3CE81A8B641300DD66FA /* LOCEventsViewController.m */; };
+		ED1FCBC41AA837BD008A2B1A /* eventImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED1FCBC31AA837BD008A2B1A /* eventImage.jpg */; };
 		ED925F921AA189660043DFE6 /* LOCEventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED925F911AA189660043DFE6 /* LOCEventDetailViewController.m */; };
 		ED95816F1AA2D42100EA19FB /* date.png in Resources */ = {isa = PBXBuildFile; fileRef = ED95816E1AA2D42100EA19FB /* date.png */; };
 		ED9581711AA2D42D00EA19FB /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9581701AA2D42D00EA19FB /* time.png */; };
@@ -51,6 +52,7 @@
 		ED1E3CDD1A8B63EF00DD66FA /* LocalendarAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalendarAppTests.m; sourceTree = "<group>"; };
 		ED1E3CE71A8B641300DD66FA /* LOCEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCEventsViewController.h; sourceTree = "<group>"; };
 		ED1E3CE81A8B641300DD66FA /* LOCEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCEventsViewController.m; sourceTree = "<group>"; };
+		ED1FCBC31AA837BD008A2B1A /* eventImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eventImage.jpg; sourceTree = "<group>"; };
 		ED925F901AA189660043DFE6 /* LOCEventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCEventDetailViewController.h; sourceTree = "<group>"; };
 		ED925F911AA189660043DFE6 /* LOCEventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCEventDetailViewController.m; sourceTree = "<group>"; };
 		ED95816E1AA2D42100EA19FB /* date.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date.png; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		ED1E3CC11A8B63EE00DD66FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED1FCBC31AA837BD008A2B1A /* eventImage.jpg */,
 				ED9581741AA2D43F00EA19FB /* url.png */,
 				ED9581721AA2D43600EA19FB /* location.png */,
 				ED9581701AA2D42D00EA19FB /* time.png */,
@@ -262,6 +265,7 @@
 				EDB1C2721A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib in Resources */,
 				ED1E3CD21A8B63EE00DD66FA /* LaunchScreen.xib in Resources */,
 				ED1E3CCF1A8B63EE00DD66FA /* Images.xcassets in Resources */,
+				ED1FCBC41AA837BD008A2B1A /* eventImage.jpg in Resources */,
 				ED95816F1AA2D42100EA19FB /* date.png in Resources */,
 				ED9581751AA2D43F00EA19FB /* url.png in Resources */,
 			);

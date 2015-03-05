@@ -12,7 +12,7 @@
 
 @property (nonatomic, retain) NSNumber *identifier;
 @property (nonatomic, retain) NSString *title;
-@property (nonatomic, retain) NSString *date;
+@property (nonatomic, retain) NSNumber *date;
 @property (nonatomic, retain) NSString *time;
 @property (nonatomic, retain) NSString *location;
 @property (nonatomic, retain) NSString *eventImage;

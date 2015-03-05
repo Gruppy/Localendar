@@ -13,7 +13,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LK9-sF-LJF">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="eventImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LK9-sF-LJF">
                         <rect key="frame" x="10" y="11" width="494" height="250"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="250" id="HTX-mO-Odj"/>
@@ -123,6 +123,7 @@
     </objects>
     <resources>
         <image name="date.png" width="64" height="64"/>
+        <image name="eventImage.jpg" width="275" height="183"/>
         <image name="location.png" width="64" height="64"/>
         <image name="time.png" width="64" height="64"/>
     </resources>

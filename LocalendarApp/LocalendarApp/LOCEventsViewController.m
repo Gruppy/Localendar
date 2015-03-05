@@ -24,8 +24,8 @@
 
 @implementation LOCEventsViewController
 
-//static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/users";
-static NSString *const kLOCBaseURL = @"http://192.168.33.10/events.json";
+static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json";
+//static NSString *const kLOCBaseURL = @"http://192.168.33.10/events.json";
 
 - (void)viewDidLoad
 {
@@ -58,10 +58,10 @@ static NSString *const kLOCBaseURL = @"http://192.168.33.10/events.json";
         LOCEvent *eventAtIndexPath = _events[indexPath.row];
         
         NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:eventAtIndexPath.eventImage]];
-        cell.eventImageView.image = [[UIImage alloc] initWithData:data];
+//        cell.eventImageView.image = [[UIImage alloc] initWithData:data];
         cell.titleLabel.text = eventAtIndexPath.title;
-        cell.dateLabel.text = eventAtIndexPath.date;
-        cell.timeLabel.text = eventAtIndexPath.time;
+//        cell.dateLabel.text = eventAtIndexPath.date;
+//        cell.timeLabel.text = eventAtIndexPath.time;
         cell.locationLabel.text = eventAtIndexPath.location;
     }
     
@@ -104,11 +104,10 @@ static NSString *const kLOCBaseURL = @"http://192.168.33.10/events.json";
     LOCEvent *event = [[LOCEvent alloc] init];
 
     event.identifier = JSONDic[@"id"];
-    event.title = JSONDic[@"title"];
-    event.date = JSONDic[@"date"];
+    event.title = JSONDic[@"contents"];
+    event.date = JSONDic[@"day"];
     event.time = JSONDic[@"time"];
-    event.location = JSONDic[@"location"];
-    event.eventImage = JSONDic[@"image"];
+    event.location = JSONDic[@"hall"];
     event.url = [JSONDic[@"url"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 
     return event;
