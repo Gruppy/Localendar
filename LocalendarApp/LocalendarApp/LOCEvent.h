@@ -11,18 +11,19 @@
 @interface LOCEvent : NSObject
 
 @property (nonatomic, retain) NSNumber *identifier;
-@property (nonatomic, retain) NSString *title;
-@property (nonatomic, retain) NSNumber *date;
-@property (nonatomic, retain) NSString *time;
-@property (nonatomic, retain) NSString *location;
-@property (nonatomic, retain) NSString *eventImage;
-@property (nonatomic, retain) NSString *descriptionText;
+@property (nonatomic, retain) NSNumber *month;
+@property (nonatomic, retain) NSNumber *day;
+@property (nonatomic, retain) NSString *week;
+@property (nonatomic, retain) NSNumber *time;
+@property (nonatomic, retain) NSString *place;
+@property (nonatomic, retain) NSString *hall;
+@property (nonatomic, retain) NSString *contents;
+@property (nonatomic, retain) NSString *tel;
+@property (nonatomic, retain) NSString *url;
+@property (nonatomic, retain) NSArray *type;
 
 @property (nonatomic, retain) NSNumber *isBookmarked;
 @property (nonatomic, retain) NSNumber *lat;
 @property (nonatomic, retain) NSNumber *lng;
-@property (nonatomic, retain) NSString *tel;
-@property (nonatomic, retain) NSString *url;
-@property (nonatomic, retain) NSString *address;
 
 @end

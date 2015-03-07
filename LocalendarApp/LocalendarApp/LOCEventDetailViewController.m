@@ -27,14 +27,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setupLabels];
+    //[self setupLabels];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+/*
 - (void)setupLabels
 {
     self.title = _event.title;
@@ -45,5 +45,5 @@
     self.locationLabel.text = _event.location;
     self.urlLabel.text = _event.url;
 }
-
+*/
 @end
