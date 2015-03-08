@@ -11,19 +11,24 @@
 @interface LOCEvent : NSObject
 
 @property (nonatomic, retain) NSNumber *identifier;
-@property (nonatomic, retain) NSNumber *month;
-@property (nonatomic, retain) NSNumber *day;
-@property (nonatomic, retain) NSString *week;
-@property (nonatomic, retain) NSNumber *time;
-@property (nonatomic, retain) NSString *place;
-@property (nonatomic, retain) NSString *hall;
-@property (nonatomic, retain) NSString *contents;
+@property (nonatomic, retain) NSString *firstTitle;
+@property (nonatomic, retain) NSString *secondTitle;
+@property (nonatomic, retain) NSNumber *startYear;
+@property (nonatomic, retain) NSNumber *startMonth;
+@property (nonatomic, retain) NSNumber *startDay;
+@property (nonatomic, retain) NSString *startWeek;
+@property (nonatomic, retain) NSNumber *endYear;
+@property (nonatomic, retain) NSNumber *endMonth;
+@property (nonatomic, retain) NSNumber *endDay;
+@property (nonatomic, retain) NSString *endWeek;
+@property (nonatomic, retain) NSNumber *startHour;
+@property (nonatomic, retain) NSNumber *startMinute;
+@property (nonatomic, retain) NSNumber *endHour;
+@property (nonatomic, retain) NSNumber *endMinute;
+@property (nonatomic, retain) NSString *mainPlace;
+@property (nonatomic, retain) NSString *detailPlace;
 @property (nonatomic, retain) NSString *tel;
 @property (nonatomic, retain) NSString *url;
 @property (nonatomic, retain) NSArray *type;
-
-@property (nonatomic, retain) NSNumber *isBookmarked;
-@property (nonatomic, retain) NSNumber *lat;
-@property (nonatomic, retain) NSNumber *lng;
 
 @end

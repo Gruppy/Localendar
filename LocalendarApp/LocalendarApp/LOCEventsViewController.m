@@ -25,12 +25,11 @@
 @implementation LOCEventsViewController
 
 static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json";
-//static NSString *const kLOCBaseURL = @"http://192.168.33.10/events.json";
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"LOCAL";
+    self.title = [NSString stringWithFormat:@"%@のイベント", @"長崎県"];
     [self.eventsTableView registerNib:[UINib nibWithNibName:@"LOCEventTableViewCell" bundle:nil] forCellReuseIdentifier:@"LOCEventTableViewCell"];
     [self loadEvents];
 }
@@ -58,10 +57,10 @@ static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json
         LOCEvent *eventAtIndexPath = _events[indexPath.row];
         
         [self setupCellImgae:cell withEvent:eventAtIndexPath];
-        cell.titleLabel.text = eventAtIndexPath.contents;
-        cell.dateLabel.text = [NSString stringWithFormat:@"%@/%@", eventAtIndexPath.month, eventAtIndexPath.day];
-        cell.timeLabel.text = [NSString stringWithFormat:@"%@", eventAtIndexPath.time];
-        cell.placeLabel.text = eventAtIndexPath.place;
+        cell.firstTitleLabel.text = eventAtIndexPath.firstTitle;
+        cell.dateLabel.text = [NSString stringWithFormat:@"%@/%@", eventAtIndexPath.startMonth, eventAtIndexPath.startDay];
+        cell.timeLabel.text = [NSString stringWithFormat:@"%@:%@", eventAtIndexPath.startHour, eventAtIndexPath.startMinute];
+        cell.placeLabel.text = eventAtIndexPath.mainPlace;
     }
     
     return cell;
@@ -84,25 +83,25 @@ static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json
     NSNumber *eventType = event.type[0];
     switch ([eventType integerValue]) {
         case 0:
-            cell.eventImageView.image = [UIImage imageNamed:@"others.png"];
+            cell.typeImageView.image = [UIImage imageNamed:@"others.png"];
             break;
         case 1:
-            cell.eventImageView.image = [UIImage imageNamed:@"student.png"];
+            cell.typeImageView.image = [UIImage imageNamed:@"student.png"];
             break;
         case 2:
-            cell.eventImageView.image = [UIImage imageNamed:@"drama.png"];
+            cell.typeImageView.image = [UIImage imageNamed:@"drama.png"];
             break;
         case 3:
-            cell.eventImageView.image = [UIImage imageNamed:@"exhibition.png"];
+            cell.typeImageView.image = [UIImage imageNamed:@"exhibition.png"];
             break;
         case 4:
-            cell.eventImageView.image = [UIImage imageNamed:@"shopping.png"];
+            cell.typeImageView.image = [UIImage imageNamed:@"shopping.png"];
             break;
         case 5:
-            cell.eventImageView.image = [UIImage imageNamed:@"seminar.png"];
+            cell.typeImageView.image = [UIImage imageNamed:@"seminar.png"];
             break;
         case 6:
-            cell.eventImageView.image = [UIImage imageNamed:@"music.png"];
+            cell.typeImageView.image = [UIImage imageNamed:@"music.png"];
             break;
         default:
             break;
@@ -134,14 +133,29 @@ static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json
     LOCEvent *event = [[LOCEvent alloc] init];
 
     event.identifier = JSONDic[@"id"];
-    event.month = JSONDic[@"month"];
-    event.day = JSONDic[@"day"];
-    event.time = JSONDic[@"time"];
-    event.place = JSONDic[@"place"];
-    event.hall = JSONDic[@"hall"];
-    event.contents = JSONDic[@"contents"];
+    
+    event.firstTitle = JSONDic[@"contents"];
+    event.secondTitle = nil;
+    
+    event.startMonth = JSONDic[@"month"];
+    event.startDay = JSONDic[@"day"];
+    event.startWeek = JSONDic[@"week"];
+    event.endMonth = nil;
+    event.endDay = nil;
+    event.endWeek = nil;
+    
+    event.startHour = JSONDic[@"time"];
+    event.startMinute = JSONDic[@"time"];
+    event.endHour = nil;
+    event.endMinute = nil;
+    
+    event.mainPlace = JSONDic[@"place"];
+    event.detailPlace = JSONDic[@"hall"];
+    
     event.tel = JSONDic[@"tell"];
+    
     event.url = [JSONDic[@"url"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
     event.type = JSONDic[@"type"];
 
     return event;

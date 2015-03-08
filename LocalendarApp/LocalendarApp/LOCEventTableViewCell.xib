@@ -9,6 +9,7 @@
             <string>HiraKakuPro-W3</string>
             <string>HiraKakuPro-W3</string>
             <string>HiraKakuPro-W3</string>
+            <string>HiraKakuPro-W3</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -37,21 +38,21 @@
                         <rect key="frame" x="87" y="9" width="417" height="70"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="date.png" translatesAutoresizingMaskIntoConstraints="NO" id="4El-JC-uBt">
-                                <rect key="frame" x="10" y="53" width="12" height="12"/>
+                                <rect key="frame" x="4" y="54" width="12" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="mkc-w5-P6J"/>
                                     <constraint firstAttribute="width" constant="12" id="x0l-gc-e5U"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="5UW-tc-iTR">
-                                <rect key="frame" x="76" y="45" width="12" height="12"/>
+                                <rect key="frame" x="67" y="54" width="12" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="Nmf-n0-unR"/>
                                     <constraint firstAttribute="width" constant="12" id="VZ1-JJ-Fe4"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvk-ZZ-p3w">
-                                <rect key="frame" x="97" y="44" width="44" height="16"/>
+                                <rect key="frame" x="87" y="52" width="44" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="38" id="sGf-CN-E34"/>
                                 </constraints>
@@ -59,32 +60,38 @@
                                 <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="タイトル" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="weR-vy-UKR">
-                                <rect key="frame" x="10" y="11" width="397" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="第一タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="weR-vy-UKR">
+                                <rect key="frame" x="10" y="5" width="397" height="20"/>
                                 <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="20"/>
                                 <color key="textColor" white="0.10171669407894739" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Place" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjb-Kv-PJ3">
-                                <rect key="frame" x="163" y="44" width="254" height="16"/>
+                                <rect key="frame" x="168" y="52" width="254" height="16"/>
                                 <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="12"/>
                                 <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="location.png" translatesAutoresizingMaskIntoConstraints="NO" id="FKj-zI-RdM">
-                                <rect key="frame" x="139" y="44" width="16" height="16"/>
+                                <rect key="frame" x="139" y="52" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="6JH-sy-07y"/>
                                     <constraint firstAttribute="width" constant="12" id="xzE-zP-LLP"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12/31" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUh-Mm-UH3">
-                                <rect key="frame" x="30" y="53" width="38" height="12"/>
+                                <rect key="frame" x="24" y="54" width="38" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="38" id="Cc5-3a-lsE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="12"/>
                                 <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="第二タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="TLE-3V-dUM">
+                                <rect key="frame" x="10" y="24" width="409" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="20"/>
+                                <color key="textColor" white="0.1017166941" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -96,13 +103,17 @@
                             <constraint firstAttribute="trailing" secondItem="weR-vy-UKR" secondAttribute="trailing" constant="4" id="6Tg-yc-r9l"/>
                             <constraint firstItem="5UW-tc-iTR" firstAttribute="leading" secondItem="HUh-Mm-UH3" secondAttribute="trailing" constant="4" id="6yI-uA-j8H"/>
                             <constraint firstAttribute="bottom" secondItem="4El-JC-uBt" secondAttribute="bottom" constant="4" id="6zh-CY-ltc"/>
+                            <constraint firstItem="TLE-3V-dUM" firstAttribute="top" secondItem="RmC-CG-dqK" secondAttribute="top" id="8na-Ae-kPJ"/>
                             <constraint firstItem="weR-vy-UKR" firstAttribute="top" secondItem="RmC-CG-dqK" secondAttribute="top" constant="4" id="9PO-wC-fKf"/>
+                            <constraint firstItem="TLE-3V-dUM" firstAttribute="leading" secondItem="RmC-CG-dqK" secondAttribute="leading" constant="4" id="CTb-ud-IcL"/>
                             <constraint firstAttribute="bottom" secondItem="HUh-Mm-UH3" secondAttribute="bottom" constant="4" id="CcZ-b6-Hig"/>
                             <constraint firstAttribute="bottom" secondItem="Wjb-Kv-PJ3" secondAttribute="bottom" constant="4" id="FpZ-ds-vHa"/>
                             <constraint firstItem="Wjb-Kv-PJ3" firstAttribute="leading" secondItem="FKj-zI-RdM" secondAttribute="trailing" constant="4" id="SOI-Ck-5fd"/>
                             <constraint firstAttribute="bottom" secondItem="FKj-zI-RdM" secondAttribute="bottom" constant="4" id="SPc-6f-bhO"/>
                             <constraint firstAttribute="trailing" secondItem="Wjb-Kv-PJ3" secondAttribute="trailing" constant="4" id="VM4-o1-FLp"/>
+                            <constraint firstItem="TLE-3V-dUM" firstAttribute="top" secondItem="weR-vy-UKR" secondAttribute="bottom" id="Vyg-ln-e6B"/>
                             <constraint firstItem="weR-vy-UKR" firstAttribute="leading" secondItem="RmC-CG-dqK" secondAttribute="leading" constant="4" id="Z8L-AL-djz"/>
+                            <constraint firstAttribute="trailing" secondItem="TLE-3V-dUM" secondAttribute="trailing" constant="4" id="ksd-3I-v6a"/>
                             <constraint firstAttribute="height" constant="70" id="pAQ-nH-VMv"/>
                             <constraint firstAttribute="bottom" secondItem="5UW-tc-iTR" secondAttribute="bottom" constant="4" id="seb-qs-CZL"/>
                             <constraint firstAttribute="bottom" secondItem="jvk-ZZ-p3w" secondAttribute="bottom" constant="4" id="tkY-sk-sLM"/>
@@ -111,6 +122,7 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="pAQ-nH-VMv"/>
+                                <exclude reference="8na-Ae-kPJ"/>
                             </mask>
                         </variation>
                     </view>
@@ -127,12 +139,13 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="dateLabel" destination="HUh-Mm-UH3" id="ta8-99-e0d"/>
-                <outlet property="eventImageView" destination="LK9-sF-LJF" id="54e-M5-hfj"/>
+                <outlet property="firstTitleLabel" destination="weR-vy-UKR" id="1pG-BO-KlI"/>
                 <outlet property="placeLabel" destination="Wjb-Kv-PJ3" id="XHz-0m-m4k"/>
+                <outlet property="secondTitleLabel" destination="TLE-3V-dUM" id="ahs-hq-pOE"/>
                 <outlet property="timeLabel" destination="jvk-ZZ-p3w" id="qSs-j5-6WK"/>
-                <outlet property="titleLabel" destination="weR-vy-UKR" id="XFd-3O-DHO"/>
+                <outlet property="typeImageView" destination="LK9-sF-LJF" id="Yuh-MG-xJa"/>
             </connections>
-            <point key="canvasLocation" x="402" y="238"/>
+            <point key="canvasLocation" x="414" y="238"/>
         </tableViewCell>
     </objects>
     <resources>

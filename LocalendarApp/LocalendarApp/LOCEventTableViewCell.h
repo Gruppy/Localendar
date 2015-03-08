@@ -10,10 +10,11 @@
 
 @interface LOCEventTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *eventImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *typeImageView;
+@property (weak, nonatomic) IBOutlet UILabel *firstTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *secondTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *placeLabel;
 
 + (float)cellHeight;
