@@ -3,6 +3,17 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ヒラギノ角ゴ Pro W3.otf">
+            <string>HiraKakuPro-W3</string>
+            <string>HiraKakuPro-W3</string>
+            <string>HiraKakuPro-W3</string>
+            <string>HiraKakuPro-W3</string>
+            <string>HiraKakuPro-W3</string>
+            <string>HiraKakuPro-W3</string>
+            <string>HiraKakuPro-W3</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Events View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -55,78 +66,114 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="日にち" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FP-Xi-Xbe">
+                                <rect key="frame" x="47" y="380" width="537" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="16"/>
+                                <color key="textColor" white="0.1017166941" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.89999999999999991" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="date.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZSZ-hy-qOe">
+                                <rect key="frame" x="16" y="380" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="EP6-jI-62Q"/>
+                                    <constraint firstAttribute="width" constant="16" id="iMp-iq-g41"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcD-eQ-5wS">
+                                <rect key="frame" x="47" y="417" width="537" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="16"/>
+                                <color key="textColor" white="0.1017166941" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.89999999999999991" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="RBH-fn-KRV">
+                                <rect key="frame" x="16" y="417" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Zjo-Hb-uJc"/>
+                                    <constraint firstAttribute="width" constant="16" id="tIB-Ls-u3q"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAD-ib-CyU">
+                                <rect key="frame" x="47" y="454" width="537" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="16"/>
+                                <color key="textColor" white="0.1017166941" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.89999999999999991" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="location.png" translatesAutoresizingMaskIntoConstraints="NO" id="uYL-0g-rMi">
+                                <rect key="frame" x="16" y="454" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="FgH-4b-rdh"/>
+                                    <constraint firstAttribute="width" constant="16" id="wyx-WU-ni1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="URL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHZ-Yl-HC4">
+                                <rect key="frame" x="47" y="491" width="537" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="16"/>
+                                <color key="textColor" white="0.1017166941" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.89999999999999991" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tel.png" translatesAutoresizingMaskIntoConstraints="NO" id="hln-9U-Ubr">
+                                <rect key="frame" x="16" y="491" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="dtr-Lh-wAW"/>
+                                    <constraint firstAttribute="height" constant="16" id="xZh-rd-Cnz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ファーストタイトル" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tSZ-ED-dm4">
+                                <rect key="frame" x="16" y="80" width="568" height="25"/>
+                                <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="20"/>
+                                <color key="textColor" white="0.1017166941" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOO-qz-9aS">
-                                <rect key="frame" x="10" y="75" width="581" height="278"/>
+                                <rect key="frame" x="10" y="142" width="581" height="220"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="278" id="7mc-al-7lT"/>
+                                    <constraint firstAttribute="height" constant="220" id="7mc-al-7lT"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FP-Xi-Xbe">
-                                <rect key="frame" x="47" y="368" width="537" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="セカンドタイトル" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LEE-on-10X">
+                                <rect key="frame" x="16" y="109" width="568" height="25"/>
+                                <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="20"/>
+                                <color key="textColor" white="0.1017166941" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="date.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZSZ-hy-qOe">
-                                <rect key="frame" x="16" y="368" width="21" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwo-PJ-axo">
+                                <rect key="frame" x="16" y="533" width="568" height="32"/>
+                                <color key="backgroundColor" red="0.27450981736183167" green="0.50980395078659058" blue="0.70588237047195435" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="EP6-jI-62Q"/>
-                                    <constraint firstAttribute="width" constant="21" id="iMp-iq-g41"/>
+                                    <constraint firstAttribute="height" constant="32" id="uh6-vy-5c2"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcD-eQ-5wS">
-                                <rect key="frame" x="47" y="405" width="537" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="RBH-fn-KRV">
-                                <rect key="frame" x="16" y="405" width="21" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Zjo-Hb-uJc"/>
-                                    <constraint firstAttribute="width" constant="21" id="tIB-Ls-u3q"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAD-ib-CyU">
-                                <rect key="frame" x="47" y="442" width="537" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.png" translatesAutoresizingMaskIntoConstraints="NO" id="uYL-0g-rMi">
-                                <rect key="frame" x="16" y="442" width="21" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="FgH-4b-rdh"/>
-                                    <constraint firstAttribute="width" constant="21" id="wyx-WU-ni1"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHZ-Yl-HC4">
-                                <rect key="frame" x="47" y="479" width="537" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="url.png" translatesAutoresizingMaskIntoConstraints="NO" id="hln-9U-Ubr">
-                                <rect key="frame" x="16" y="479" width="21" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="21" id="dtr-Lh-wAW"/>
-                                    <constraint firstAttribute="height" constant="21" id="xZh-rd-Cnz"/>
-                                </constraints>
-                            </imageView>
+                                <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="16"/>
+                                <state key="normal" title="詳細をみる">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vLA-2R-oJ4" kind="push" identifier="ToEventWebPage" id="MBz-v7-uzw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wOO-qz-9aS" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="10" id="21r-C1-vjn"/>
+                            <constraint firstItem="wOO-qz-9aS" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="16" id="21r-C1-vjn"/>
                             <constraint firstAttribute="trailing" secondItem="fAD-ib-CyU" secondAttribute="trailing" constant="16" id="4ih-g8-s14"/>
+                            <constraint firstAttribute="trailing" secondItem="tSZ-ED-dm4" secondAttribute="trailing" constant="16" id="67S-t2-Tfl"/>
+                            <constraint firstItem="tSZ-ED-dm4" firstAttribute="top" secondItem="aSD-wq-Xaj" secondAttribute="bottom" constant="20" id="6G2-ip-5um"/>
+                            <constraint firstItem="wOO-qz-9aS" firstAttribute="top" secondItem="LEE-on-10X" secondAttribute="bottom" constant="16" id="6Ij-e3-ouA"/>
                             <constraint firstItem="mcD-eQ-5wS" firstAttribute="top" secondItem="1FP-Xi-Xbe" secondAttribute="bottom" constant="16" id="8hW-YU-CsE"/>
                             <constraint firstAttribute="bottom" secondItem="mcD-eQ-5wS" secondAttribute="bottom" constant="158" id="BRZ-6w-AfZ"/>
                             <constraint firstItem="mcD-eQ-5wS" firstAttribute="leading" secondItem="RBH-fn-KRV" secondAttribute="trailing" constant="10" id="Ccj-JY-x4y"/>
+                            <constraint firstItem="uwo-PJ-axo" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="16" id="Dvf-4z-Fyl"/>
                             <constraint firstAttribute="trailing" secondItem="mcD-eQ-5wS" secondAttribute="trailing" constant="16" id="H76-Dj-FTm"/>
+                            <constraint firstItem="wOO-qz-9aS" firstAttribute="top" secondItem="tSZ-ED-dm4" secondAttribute="bottom" constant="10" id="HAd-Uq-1IH"/>
                             <constraint firstItem="1FP-Xi-Xbe" firstAttribute="leading" secondItem="ZSZ-hy-qOe" secondAttribute="trailing" constant="10" id="HaT-gy-W9u"/>
+                            <constraint firstAttribute="trailing" secondItem="LEE-on-10X" secondAttribute="trailing" constant="16" id="HbV-dP-xtG"/>
+                            <constraint firstAttribute="trailing" secondItem="uwo-PJ-axo" secondAttribute="trailing" constant="16" id="Lej-VD-K5Y"/>
                             <constraint firstItem="RBH-fn-KRV" firstAttribute="top" secondItem="ZSZ-hy-qOe" secondAttribute="bottom" constant="16" id="LxX-2y-Eyg"/>
                             <constraint firstItem="mcD-eQ-5wS" firstAttribute="top" secondItem="RBH-fn-KRV" secondAttribute="top" id="MIB-Z2-Tja"/>
+                            <constraint firstItem="1FP-Xi-Xbe" firstAttribute="top" secondItem="wOO-qz-9aS" secondAttribute="bottom" constant="16" id="Mq9-fa-eug"/>
                             <constraint firstItem="ZSZ-hy-qOe" firstAttribute="top" secondItem="wOO-qz-9aS" secondAttribute="bottom" constant="16" id="NIw-8B-Qyk"/>
                             <constraint firstItem="fAD-ib-CyU" firstAttribute="top" secondItem="mcD-eQ-5wS" secondAttribute="bottom" constant="16" id="RID-as-oAS"/>
+                            <constraint firstItem="tSZ-ED-dm4" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="16" id="S80-4u-Bbb"/>
                             <constraint firstItem="uYL-0g-rMi" firstAttribute="top" secondItem="RBH-fn-KRV" secondAttribute="bottom" constant="16" id="Syz-TF-4A5"/>
                             <constraint firstItem="fAD-ib-CyU" firstAttribute="leading" secondItem="uYL-0g-rMi" secondAttribute="trailing" constant="10" id="T58-jZ-2ZP"/>
                             <constraint firstItem="GHZ-Yl-HC4" firstAttribute="top" secondItem="hln-9U-Ubr" secondAttribute="top" id="WAj-QC-cIk"/>
@@ -134,35 +181,70 @@
                             <constraint firstItem="GHZ-Yl-HC4" firstAttribute="leading" secondItem="hln-9U-Ubr" secondAttribute="trailing" constant="10" id="b46-2l-Vrr"/>
                             <constraint firstAttribute="trailing" secondItem="GHZ-Yl-HC4" secondAttribute="trailing" constant="16" id="bDo-Fg-Nv7"/>
                             <constraint firstItem="wOO-qz-9aS" firstAttribute="top" secondItem="aSD-wq-Xaj" secondAttribute="bottom" constant="10" id="fZU-fx-Fx4"/>
+                            <constraint firstItem="LEE-on-10X" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="16" id="g5u-QA-BAE"/>
+                            <constraint firstItem="LEE-on-10X" firstAttribute="top" secondItem="tSZ-ED-dm4" secondAttribute="bottom" constant="5" id="hFT-DV-Kvx"/>
                             <constraint firstItem="hln-9U-Ubr" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="16" id="j35-4l-qMq"/>
                             <constraint firstItem="ZSZ-hy-qOe" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="16" id="jnR-TH-tql"/>
                             <constraint firstAttribute="trailing" secondItem="1FP-Xi-Xbe" secondAttribute="trailing" constant="16" id="kXo-ZK-vg5"/>
-                            <constraint firstAttribute="trailing" secondItem="wOO-qz-9aS" secondAttribute="trailing" constant="10" id="lV8-AV-suK"/>
+                            <constraint firstAttribute="trailing" secondItem="wOO-qz-9aS" secondAttribute="trailing" constant="16" id="lV8-AV-suK"/>
                             <constraint firstItem="hln-9U-Ubr" firstAttribute="top" secondItem="uYL-0g-rMi" secondAttribute="bottom" constant="16" id="o6x-eM-p6L"/>
                             <constraint firstItem="uYL-0g-rMi" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="16" id="pSo-Wz-uMR"/>
+                            <constraint firstItem="uwo-PJ-axo" firstAttribute="top" secondItem="hln-9U-Ubr" secondAttribute="bottom" constant="16" id="ybq-tw-TdD"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="HAd-Uq-1IH"/>
+                                <exclude reference="fZU-fx-Fx4"/>
                                 <exclude reference="BRZ-6w-AfZ"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="gZN-sa-7P5"/>
                     <connections>
-                        <outlet property="dateIcon" destination="ZSZ-hy-qOe" id="4DJ-sw-TjV"/>
                         <outlet property="dateLabel" destination="1FP-Xi-Xbe" id="Xse-ld-C3J"/>
                         <outlet property="eventImageView" destination="wOO-qz-9aS" id="ILR-dK-Dy1"/>
-                        <outlet property="locationIcon" destination="uYL-0g-rMi" id="oUD-Z3-DPo"/>
-                        <outlet property="locationLabel" destination="fAD-ib-CyU" id="qQE-Zf-Dsc"/>
-                        <outlet property="timeIcon" destination="RBH-fn-KRV" id="Uh9-AW-BRe"/>
+                        <outlet property="firstTitleLabel" destination="tSZ-ED-dm4" id="FLi-tv-t7V"/>
+                        <outlet property="placeLabel" destination="fAD-ib-CyU" id="gVE-Il-qXi"/>
+                        <outlet property="secondTitleLabel" destination="LEE-on-10X" id="jQo-fI-R4B"/>
+                        <outlet property="showDetailButton" destination="uwo-PJ-axo" id="X2s-me-nQh"/>
+                        <outlet property="telLabel" destination="GHZ-Yl-HC4" id="y1Z-bq-TNO"/>
                         <outlet property="timeLabel" destination="mcD-eQ-5wS" id="ojy-F9-lGr"/>
-                        <outlet property="urlIcon" destination="hln-9U-Ubr" id="mlk-cH-Fie"/>
-                        <outlet property="urlLabel" destination="GHZ-Yl-HC4" id="rAS-A5-I5o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xmr-dd-XTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1602" y="-327"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y13-IX-Vjy">
+            <objects>
+                <viewController id="vLA-2R-oJ4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FqR-e7-Wk0"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Vy-wv-9YW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h0F-fE-QW8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppP-Yr-VSq">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Vy-wv-9YW" firstAttribute="top" secondItem="ppP-Yr-VSq" secondAttribute="bottom" id="0ii-HX-QXz"/>
+                            <constraint firstItem="ppP-Yr-VSq" firstAttribute="leading" secondItem="h0F-fE-QW8" secondAttribute="leading" id="FNv-Mh-Dnt"/>
+                            <constraint firstItem="ppP-Yr-VSq" firstAttribute="top" secondItem="FqR-e7-Wk0" secondAttribute="bottom" id="XuI-wR-2rs"/>
+                            <constraint firstAttribute="trailing" secondItem="ppP-Yr-VSq" secondAttribute="trailing" id="tEA-hV-uQI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pmV-RJ-MWo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LnE-Rn-tC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2341" y="-327"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hiu-cl-w4V">
@@ -186,7 +268,7 @@
     <resources>
         <image name="date.png" width="64" height="64"/>
         <image name="location.png" width="64" height="64"/>
+        <image name="tel.png" width="64" height="64"/>
         <image name="time.png" width="64" height="64"/>
-        <image name="url.png" width="64" height="64"/>
     </resources>
 </document>
