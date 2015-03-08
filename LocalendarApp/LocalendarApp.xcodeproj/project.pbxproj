@@ -15,6 +15,11 @@
 		ED1E3CD21A8B63EE00DD66FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1E3CD01A8B63EE00DD66FA /* LaunchScreen.xib */; };
 		ED1E3CDE1A8B63EF00DD66FA /* LocalendarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1E3CDD1A8B63EF00DD66FA /* LocalendarAppTests.m */; };
 		ED1E3CE91A8B641300DD66FA /* LOCEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1E3CE81A8B641300DD66FA /* LOCEventsViewController.m */; };
+		ED375F181AAC8E7E00327E79 /* place.png in Resources */ = {isa = PBXBuildFile; fileRef = ED375F171AAC8E7E00327E79 /* place.png */; };
+		ED375F1B1AAC969D00327E79 /* ceremony.png in Resources */ = {isa = PBXBuildFile; fileRef = ED375F191AAC969D00327E79 /* ceremony.png */; };
+		ED375F1C1AAC969D00327E79 /* festival.png in Resources */ = {isa = PBXBuildFile; fileRef = ED375F1A1AAC969D00327E79 /* festival.png */; };
+		ED375F1E1AAC96B300327E79 /* ticket.png in Resources */ = {isa = PBXBuildFile; fileRef = ED375F1D1AAC96B300327E79 /* ticket.png */; };
+		ED624B131AAC785300C4A392 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED624B151AAC785300C4A392 /* Localizable.strings */; };
 		ED925F921AA189660043DFE6 /* LOCEventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED925F911AA189660043DFE6 /* LOCEventDetailViewController.m */; };
 		EDAAAAD31AABE3DD00E53FA5 /* ヒラギノ角ゴ Pro W3.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDAAAAD21AABE3B900E53FA5 /* ヒラギノ角ゴ Pro W3.otf */; };
 		EDB1C2711A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB1C26F1A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m */; };
@@ -24,23 +29,17 @@
 		EDD0C2401AAC3AD100BF4B2E /* date.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C2361AAC3AD100BF4B2E /* date.png */; };
 		EDD0C2411AAC3AD100BF4B2E /* drama.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C2371AAC3AD100BF4B2E /* drama.png */; };
 		EDD0C2421AAC3AD100BF4B2E /* exhibition.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C2381AAC3AD100BF4B2E /* exhibition.png */; };
-		EDD0C2431AAC3AD100BF4B2E /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C2391AAC3AD100BF4B2E /* location.png */; };
 		EDD0C2441AAC3AD100BF4B2E /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C23A1AAC3AD100BF4B2E /* music.png */; };
 		EDD0C2451AAC3AD100BF4B2E /* seminar.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C23B1AAC3AD100BF4B2E /* seminar.png */; };
 		EDD0C2461AAC3AD100BF4B2E /* shopping.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C23C1AAC3AD100BF4B2E /* shopping.png */; };
 		EDD0C2471AAC3AD100BF4B2E /* students.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C23D1AAC3AD100BF4B2E /* students.png */; };
 		EDD0C2481AAC3AD100BF4B2E /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C23E1AAC3AD100BF4B2E /* time.png */; };
 		EDD0C2491AAC3AD100BF4B2E /* url.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C23F1AAC3AD100BF4B2E /* url.png */; };
-		EDD0C2551AAC3ADE00BF4B2E /* arukas_big_seminar_room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C24B1AAC3ADE00BF4B2E /* arukas_big_seminar_room.jpg */; };
-		EDD0C2561AAC3ADE00BF4B2E /* arukas_event_hall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C24C1AAC3ADE00BF4B2E /* arukas_event_hall.jpg */; };
-		EDD0C2571AAC3ADE00BF4B2E /* arukas_japanese_room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C24D1AAC3ADE00BF4B2E /* arukas_japanese_room.jpg */; };
-		EDD0C2581AAC3ADE00BF4B2E /* arukas_lerge_hall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C24E1AAC3ADE00BF4B2E /* arukas_lerge_hall.jpg */; };
-		EDD0C2591AAC3ADE00BF4B2E /* arukas_medium_hall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C24F1AAC3ADE00BF4B2E /* arukas_medium_hall.jpg */; };
-		EDD0C25A1AAC3ADE00BF4B2E /* arukas_medium_seminar_room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C2501AAC3ADE00BF4B2E /* arukas_medium_seminar_room.jpg */; };
-		EDD0C25B1AAC3ADE00BF4B2E /* arukas_small_seminar_room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C2511AAC3ADE00BF4B2E /* arukas_small_seminar_room.jpg */; };
-		EDD0C25C1AAC3ADE00BF4B2E /* arukas_special_seminar_room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C2521AAC3ADE00BF4B2E /* arukas_special_seminar_room.jpg */; };
-		EDD0C25D1AAC3ADE00BF4B2E /* brick_international_discussion_room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C2531AAC3ADE00BF4B2E /* brick_international_discussion_room.jpg */; };
-		EDD0C25E1AAC3ADE00BF4B2E /* brick_lerge_hall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C2541AAC3ADE00BF4B2E /* brick_lerge_hall.jpg */; };
+		EDD0C2561AAC3ADE00BF4B2E /* arukas_sasebo_event_hall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C24C1AAC3ADE00BF4B2E /* arukas_sasebo_event_hall.jpg */; };
+		EDD0C2581AAC3ADE00BF4B2E /* arukas_sasebo_lerge_hall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C24E1AAC3ADE00BF4B2E /* arukas_sasebo_lerge_hall.jpg */; };
+		EDD0C2591AAC3ADE00BF4B2E /* arukas_sasebo_medium_hall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C24F1AAC3ADE00BF4B2E /* arukas_sasebo_medium_hall.jpg */; };
+		EDD0C25D1AAC3ADE00BF4B2E /* nagasaki_brick_hall_international_discussion_room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C2531AAC3ADE00BF4B2E /* nagasaki_brick_hall_international_discussion_room.jpg */; };
+		EDD0C25E1AAC3ADE00BF4B2E /* nagasaki_brick_hall_lerge_hall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C2541AAC3ADE00BF4B2E /* nagasaki_brick_hall_lerge_hall.jpg */; };
 		EDD0C2601AAC3C3B00BF4B2E /* tel.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C25F1AAC3C3B00BF4B2E /* tel.png */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +61,6 @@
 		ED1E3CC31A8B63EE00DD66FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED1E3CC51A8B63EE00DD66FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED1E3CC61A8B63EE00DD66FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ED1E3CCC1A8B63EE00DD66FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED1E3CCE1A8B63EE00DD66FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED1E3CD11A8B63EE00DD66FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ED1E3CD71A8B63EF00DD66FA /* LocalendarAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalendarAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +68,15 @@
 		ED1E3CDD1A8B63EF00DD66FA /* LocalendarAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalendarAppTests.m; sourceTree = "<group>"; };
 		ED1E3CE71A8B641300DD66FA /* LOCEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCEventsViewController.h; sourceTree = "<group>"; };
 		ED1E3CE81A8B641300DD66FA /* LOCEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCEventsViewController.m; sourceTree = "<group>"; };
+		ED375F171AAC8E7E00327E79 /* place.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = place.png; sourceTree = "<group>"; };
+		ED375F191AAC969D00327E79 /* ceremony.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ceremony.png; sourceTree = "<group>"; };
+		ED375F1A1AAC969D00327E79 /* festival.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = festival.png; sourceTree = "<group>"; };
+		ED375F1D1AAC96B300327E79 /* ticket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticket.png; sourceTree = "<group>"; };
+		ED375F1F1AAC9E3B00327E79 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED375F201AAC9E3C00327E79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED375F211AAC9F2D00327E79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ED624B0E1AAC779100C4A392 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		ED624B141AAC785300C4A392 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ED925F901AA189660043DFE6 /* LOCEventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCEventDetailViewController.h; sourceTree = "<group>"; };
 		ED925F911AA189660043DFE6 /* LOCEventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCEventDetailViewController.m; sourceTree = "<group>"; };
 		EDAAAAD21AABE3B900E53FA5 /* ヒラギノ角ゴ Pro W3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ヒラギノ角ゴ Pro W3.otf"; sourceTree = "<group>"; };
@@ -83,23 +90,17 @@
 		EDD0C2361AAC3AD100BF4B2E /* date.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date.png; sourceTree = "<group>"; };
 		EDD0C2371AAC3AD100BF4B2E /* drama.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drama.png; sourceTree = "<group>"; };
 		EDD0C2381AAC3AD100BF4B2E /* exhibition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exhibition.png; sourceTree = "<group>"; };
-		EDD0C2391AAC3AD100BF4B2E /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
 		EDD0C23A1AAC3AD100BF4B2E /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 		EDD0C23B1AAC3AD100BF4B2E /* seminar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seminar.png; sourceTree = "<group>"; };
 		EDD0C23C1AAC3AD100BF4B2E /* shopping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopping.png; sourceTree = "<group>"; };
 		EDD0C23D1AAC3AD100BF4B2E /* students.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = students.png; sourceTree = "<group>"; };
 		EDD0C23E1AAC3AD100BF4B2E /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time.png; sourceTree = "<group>"; };
 		EDD0C23F1AAC3AD100BF4B2E /* url.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = url.png; sourceTree = "<group>"; };
-		EDD0C24B1AAC3ADE00BF4B2E /* arukas_big_seminar_room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arukas_big_seminar_room.jpg; sourceTree = "<group>"; };
-		EDD0C24C1AAC3ADE00BF4B2E /* arukas_event_hall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arukas_event_hall.jpg; sourceTree = "<group>"; };
-		EDD0C24D1AAC3ADE00BF4B2E /* arukas_japanese_room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arukas_japanese_room.jpg; sourceTree = "<group>"; };
-		EDD0C24E1AAC3ADE00BF4B2E /* arukas_lerge_hall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arukas_lerge_hall.jpg; sourceTree = "<group>"; };
-		EDD0C24F1AAC3ADE00BF4B2E /* arukas_medium_hall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arukas_medium_hall.jpg; sourceTree = "<group>"; };
-		EDD0C2501AAC3ADE00BF4B2E /* arukas_medium_seminar_room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arukas_medium_seminar_room.jpg; sourceTree = "<group>"; };
-		EDD0C2511AAC3ADE00BF4B2E /* arukas_small_seminar_room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arukas_small_seminar_room.jpg; sourceTree = "<group>"; };
-		EDD0C2521AAC3ADE00BF4B2E /* arukas_special_seminar_room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arukas_special_seminar_room.jpg; sourceTree = "<group>"; };
-		EDD0C2531AAC3ADE00BF4B2E /* brick_international_discussion_room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brick_international_discussion_room.jpg; sourceTree = "<group>"; };
-		EDD0C2541AAC3ADE00BF4B2E /* brick_lerge_hall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brick_lerge_hall.jpg; sourceTree = "<group>"; };
+		EDD0C24C1AAC3ADE00BF4B2E /* arukas_sasebo_event_hall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arukas_sasebo_event_hall.jpg; sourceTree = "<group>"; };
+		EDD0C24E1AAC3ADE00BF4B2E /* arukas_sasebo_lerge_hall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arukas_sasebo_lerge_hall.jpg; sourceTree = "<group>"; };
+		EDD0C24F1AAC3ADE00BF4B2E /* arukas_sasebo_medium_hall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arukas_sasebo_medium_hall.jpg; sourceTree = "<group>"; };
+		EDD0C2531AAC3ADE00BF4B2E /* nagasaki_brick_hall_international_discussion_room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nagasaki_brick_hall_international_discussion_room.jpg; sourceTree = "<group>"; };
+		EDD0C2541AAC3ADE00BF4B2E /* nagasaki_brick_hall_lerge_hall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nagasaki_brick_hall_lerge_hall.jpg; sourceTree = "<group>"; };
 		EDD0C25F1AAC3C3B00BF4B2E /* tel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tel.png; sourceTree = "<group>"; };
 		F070049017508FB66F9B99B5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,6 +192,7 @@
 				EDD0C24A1AAC3ADE00BF4B2E /* Images */,
 				EDD0C2351AAC3AD100BF4B2E /* Icons */,
 				ED1E3CC21A8B63EE00DD66FA /* Info.plist */,
+				ED624B151AAC785300C4A392 /* Localizable.strings */,
 				ED1E3CC31A8B63EE00DD66FA /* main.m */,
 			);
 			name = "Supporting Files";
@@ -216,11 +218,14 @@
 		EDD0C2351AAC3AD100BF4B2E /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				ED375F1D1AAC96B300327E79 /* ticket.png */,
+				ED375F191AAC969D00327E79 /* ceremony.png */,
+				ED375F1A1AAC969D00327E79 /* festival.png */,
+				ED375F171AAC8E7E00327E79 /* place.png */,
 				EDD0C25F1AAC3C3B00BF4B2E /* tel.png */,
 				EDD0C2361AAC3AD100BF4B2E /* date.png */,
 				EDD0C2371AAC3AD100BF4B2E /* drama.png */,
 				EDD0C2381AAC3AD100BF4B2E /* exhibition.png */,
-				EDD0C2391AAC3AD100BF4B2E /* location.png */,
 				EDD0C23A1AAC3AD100BF4B2E /* music.png */,
 				EDD0C23B1AAC3AD100BF4B2E /* seminar.png */,
 				EDD0C23C1AAC3AD100BF4B2E /* shopping.png */,
@@ -234,16 +239,11 @@
 		EDD0C24A1AAC3ADE00BF4B2E /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				EDD0C24B1AAC3ADE00BF4B2E /* arukas_big_seminar_room.jpg */,
-				EDD0C24C1AAC3ADE00BF4B2E /* arukas_event_hall.jpg */,
-				EDD0C24D1AAC3ADE00BF4B2E /* arukas_japanese_room.jpg */,
-				EDD0C24E1AAC3ADE00BF4B2E /* arukas_lerge_hall.jpg */,
-				EDD0C24F1AAC3ADE00BF4B2E /* arukas_medium_hall.jpg */,
-				EDD0C2501AAC3ADE00BF4B2E /* arukas_medium_seminar_room.jpg */,
-				EDD0C2511AAC3ADE00BF4B2E /* arukas_small_seminar_room.jpg */,
-				EDD0C2521AAC3ADE00BF4B2E /* arukas_special_seminar_room.jpg */,
-				EDD0C2531AAC3ADE00BF4B2E /* brick_international_discussion_room.jpg */,
-				EDD0C2541AAC3ADE00BF4B2E /* brick_lerge_hall.jpg */,
+				EDD0C24C1AAC3ADE00BF4B2E /* arukas_sasebo_event_hall.jpg */,
+				EDD0C24E1AAC3ADE00BF4B2E /* arukas_sasebo_lerge_hall.jpg */,
+				EDD0C24F1AAC3ADE00BF4B2E /* arukas_sasebo_medium_hall.jpg */,
+				EDD0C2531AAC3ADE00BF4B2E /* nagasaki_brick_hall_international_discussion_room.jpg */,
+				EDD0C2541AAC3ADE00BF4B2E /* nagasaki_brick_hall_lerge_hall.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -331,32 +331,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDD0C25A1AAC3ADE00BF4B2E /* arukas_medium_seminar_room.jpg in Resources */,
-				EDD0C2561AAC3ADE00BF4B2E /* arukas_event_hall.jpg in Resources */,
+				EDD0C2561AAC3ADE00BF4B2E /* arukas_sasebo_event_hall.jpg in Resources */,
+				ED375F1B1AAC969D00327E79 /* ceremony.png in Resources */,
 				EDAAAAD31AABE3DD00E53FA5 /* ヒラギノ角ゴ Pro W3.otf in Resources */,
 				EDD0C2441AAC3AD100BF4B2E /* music.png in Resources */,
+				ED624B131AAC785300C4A392 /* Localizable.strings in Resources */,
+				ED375F1C1AAC969D00327E79 /* festival.png in Resources */,
 				EDD0C2461AAC3AD100BF4B2E /* shopping.png in Resources */,
 				ED1E3CCD1A8B63EE00DD66FA /* Main.storyboard in Resources */,
-				EDD0C2571AAC3ADE00BF4B2E /* arukas_japanese_room.jpg in Resources */,
-				EDD0C2591AAC3ADE00BF4B2E /* arukas_medium_hall.jpg in Resources */,
+				EDD0C2591AAC3ADE00BF4B2E /* arukas_sasebo_medium_hall.jpg in Resources */,
 				EDD0C2451AAC3AD100BF4B2E /* seminar.png in Resources */,
-				EDD0C2431AAC3AD100BF4B2E /* location.png in Resources */,
-				EDD0C25B1AAC3ADE00BF4B2E /* arukas_small_seminar_room.jpg in Resources */,
 				EDB1C2721A8B6E5D00F1E8F7 /* LOCEventTableViewCell.xib in Resources */,
 				EDD0C2471AAC3AD100BF4B2E /* students.png in Resources */,
 				EDD0C2491AAC3AD100BF4B2E /* url.png in Resources */,
-				EDD0C25C1AAC3ADE00BF4B2E /* arukas_special_seminar_room.jpg in Resources */,
 				EDD0C2421AAC3AD100BF4B2E /* exhibition.png in Resources */,
-				EDD0C2551AAC3ADE00BF4B2E /* arukas_big_seminar_room.jpg in Resources */,
 				EDD0C2601AAC3C3B00BF4B2E /* tel.png in Resources */,
 				ED1E3CD21A8B63EE00DD66FA /* LaunchScreen.xib in Resources */,
 				EDD0C2411AAC3AD100BF4B2E /* drama.png in Resources */,
-				EDD0C25D1AAC3ADE00BF4B2E /* brick_international_discussion_room.jpg in Resources */,
-				EDD0C25E1AAC3ADE00BF4B2E /* brick_lerge_hall.jpg in Resources */,
+				EDD0C25D1AAC3ADE00BF4B2E /* nagasaki_brick_hall_international_discussion_room.jpg in Resources */,
+				EDD0C25E1AAC3ADE00BF4B2E /* nagasaki_brick_hall_lerge_hall.jpg in Resources */,
+				ED375F1E1AAC96B300327E79 /* ticket.png in Resources */,
 				EDD0C2481AAC3AD100BF4B2E /* time.png in Resources */,
 				ED1E3CCF1A8B63EE00DD66FA /* Images.xcassets in Resources */,
+				ED375F181AAC8E7E00327E79 /* place.png in Resources */,
 				EDD0C2401AAC3AD100BF4B2E /* date.png in Resources */,
-				EDD0C2581AAC3ADE00BF4B2E /* arukas_lerge_hall.jpg in Resources */,
+				EDD0C2581AAC3ADE00BF4B2E /* arukas_sasebo_lerge_hall.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +438,8 @@
 		ED1E3CCB1A8B63EE00DD66FA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED1E3CCC1A8B63EE00DD66FA /* Base */,
+				ED375F1F1AAC9E3B00327E79 /* ja */,
+				ED375F201AAC9E3C00327E79 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -448,8 +448,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				ED1E3CD11A8B63EE00DD66FA /* Base */,
+				ED624B0E1AAC779100C4A392 /* ja */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		ED624B151AAC785300C4A392 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED624B141AAC785300C4A392 /* ja */,
+				ED375F211AAC9F2D00327E79 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -11,6 +11,7 @@
 @interface LOCEvent : NSObject
 
 @property (nonatomic, retain) NSNumber *identifier;
+@property (nonatomic, retain) NSString *prefecture;
 @property (nonatomic, retain) NSString *firstTitle;
 @property (nonatomic, retain) NSString *secondTitle;
 @property (nonatomic, retain) NSNumber *startYear;
@@ -27,6 +28,7 @@
 @property (nonatomic, retain) NSNumber *endMinute;
 @property (nonatomic, retain) NSString *mainPlace;
 @property (nonatomic, retain) NSString *detailPlace;
+@property (nonatomic, retain) NSString *ticket;
 @property (nonatomic, retain) NSString *tel;
 @property (nonatomic, retain) NSString *url;
 @property (nonatomic, retain) NSArray *type;

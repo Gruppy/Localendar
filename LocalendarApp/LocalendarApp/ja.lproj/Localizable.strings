@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  LocalendarApp
+
+  Created by Yoshiyuki Kuga on 2015/03/08.
+  Copyright (c) 2015年 Gruppy. All rights reserved.
+*/
+
+"arukas_sasebo" = "アルカス佐世保";
+"nagasaki_brick_hall" = "長崎ブリックホール";
+
+"lerge_hall" = "大ホール";
+"medium_hall" = "中ホール";
+"event_hall" = "イベントホール";
+"international_discussion_room" = "国際会議場";
+
+"refer_to_the_HP" = "詳細はホームページを御覧ください";

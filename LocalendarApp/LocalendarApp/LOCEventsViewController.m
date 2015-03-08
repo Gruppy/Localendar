@@ -56,11 +56,12 @@ static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json
     if (_events) {
         LOCEvent *eventAtIndexPath = _events[indexPath.row];
         
-        [self setupCellImgae:cell withEvent:eventAtIndexPath];
+        cell.typeImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", eventAtIndexPath.type[0]]];
         cell.firstTitleLabel.text = eventAtIndexPath.firstTitle;
-        cell.dateLabel.text = [NSString stringWithFormat:@"%@/%@", eventAtIndexPath.startMonth, eventAtIndexPath.startDay];
+        cell.secondTitleLabel.text = eventAtIndexPath.secondTitle;
+        cell.dateLabel.text = [NSString stringWithFormat:@"%@/%@ (%@)", eventAtIndexPath.startMonth, eventAtIndexPath.startDay, NSLocalizedString(eventAtIndexPath.startWeek, nil)];
         cell.timeLabel.text = [NSString stringWithFormat:@"%@:%@", eventAtIndexPath.startHour, eventAtIndexPath.startMinute];
-        cell.placeLabel.text = eventAtIndexPath.mainPlace;
+        cell.placeLabel.text = NSLocalizedString(eventAtIndexPath.mainPlace, nil);
     }
     
     return cell;
@@ -75,37 +76,6 @@ static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json
 {
     _selectedEvent = _events[indexPath.row];
     [self performSegueWithIdentifier:@"ToEventDetail" sender:self];
-}
-
-- (void)setupCellImgae:(LOCEventTableViewCell *)cell
-             withEvent:(LOCEvent *)event
-{
-    NSNumber *eventType = event.type[0];
-    switch ([eventType integerValue]) {
-        case 0:
-            cell.typeImageView.image = [UIImage imageNamed:@"others.png"];
-            break;
-        case 1:
-            cell.typeImageView.image = [UIImage imageNamed:@"student.png"];
-            break;
-        case 2:
-            cell.typeImageView.image = [UIImage imageNamed:@"drama.png"];
-            break;
-        case 3:
-            cell.typeImageView.image = [UIImage imageNamed:@"exhibition.png"];
-            break;
-        case 4:
-            cell.typeImageView.image = [UIImage imageNamed:@"shopping.png"];
-            break;
-        case 5:
-            cell.typeImageView.image = [UIImage imageNamed:@"seminar.png"];
-            break;
-        case 6:
-            cell.typeImageView.image = [UIImage imageNamed:@"music.png"];
-            break;
-        default:
-            break;
-    }
 }
 
 #pragma mark - Data
@@ -134,12 +104,14 @@ static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json
 
     event.identifier = JSONDic[@"id"];
     
+    event.prefecture = nil;
+    
     event.firstTitle = JSONDic[@"contents"];
-    event.secondTitle = nil;
+    event.secondTitle = JSONDic[@"contents"];
     
     event.startMonth = JSONDic[@"month"];
     event.startDay = JSONDic[@"day"];
-    event.startWeek = JSONDic[@"week"];
+    event.startWeek = JSONDic[@"youbi"];
     event.endMonth = nil;
     event.endDay = nil;
     event.endWeek = nil;
@@ -151,6 +123,8 @@ static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json
     
     event.mainPlace = JSONDic[@"place"];
     event.detailPlace = JSONDic[@"hall"];
+    
+    event.ticket = nil;
     
     event.tel = JSONDic[@"tell"];
     

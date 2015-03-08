@@ -72,7 +72,7 @@
                                 <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="location.png" translatesAutoresizingMaskIntoConstraints="NO" id="FKj-zI-RdM">
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="place.png" translatesAutoresizingMaskIntoConstraints="NO" id="FKj-zI-RdM">
                                 <rect key="frame" x="139" y="52" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="6JH-sy-07y"/>
@@ -150,7 +150,7 @@
     </objects>
     <resources>
         <image name="date.png" width="64" height="64"/>
-        <image name="location.png" width="64" height="64"/>
+        <image name="place.png" width="64" height="64"/>
         <image name="time.png" width="64" height="64"/>
     </resources>
 </document>
