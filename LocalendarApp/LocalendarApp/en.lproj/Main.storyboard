@@ -106,7 +106,7 @@
                                     <constraint firstAttribute="width" constant="16" id="wyx-WU-ni1"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="電話" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHZ-Yl-HC4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="料金" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHZ-Yl-HC4">
                                 <rect key="frame" x="47" y="491" width="537" height="21"/>
                                 <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="16"/>
                                 <color key="textColor" white="0.1017166941" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,7 +132,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="セカンドタイトル" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LEE-on-10X">
-                                <rect key="frame" x="16" y="109" width="568" height="25"/>
+                                <rect key="frame" x="16" y="101" width="568" height="25"/>
                                 <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="20"/>
                                 <color key="textColor" white="0.1017166941" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -185,10 +185,10 @@
                             <constraint firstAttribute="trailing" secondItem="uwo-PJ-axo" secondAttribute="trailing" constant="16" id="Lej-VD-K5Y"/>
                             <constraint firstItem="RBH-fn-KRV" firstAttribute="top" secondItem="ZSZ-hy-qOe" secondAttribute="bottom" constant="16" id="LxX-2y-Eyg"/>
                             <constraint firstItem="mcD-eQ-5wS" firstAttribute="top" secondItem="RBH-fn-KRV" secondAttribute="top" id="MIB-Z2-Tja"/>
-                            <constraint firstItem="1FP-Xi-Xbe" firstAttribute="top" secondItem="wOO-qz-9aS" secondAttribute="bottom" constant="16" id="Mq9-fa-eug"/>
-                            <constraint firstItem="ZSZ-hy-qOe" firstAttribute="top" secondItem="wOO-qz-9aS" secondAttribute="bottom" constant="16" id="NIw-8B-Qyk"/>
+                            <constraint firstItem="1FP-Xi-Xbe" firstAttribute="top" secondItem="wOO-qz-9aS" secondAttribute="bottom" constant="10" id="Mq9-fa-eug"/>
+                            <constraint firstItem="ZSZ-hy-qOe" firstAttribute="top" secondItem="wOO-qz-9aS" secondAttribute="bottom" constant="10" id="NIw-8B-Qyk"/>
                             <constraint firstItem="fAD-ib-CyU" firstAttribute="top" secondItem="mcD-eQ-5wS" secondAttribute="bottom" constant="16" id="RID-as-oAS"/>
-                            <constraint firstItem="uwo-PJ-axo" firstAttribute="top" secondItem="jQJ-c0-Uwg" secondAttribute="bottom" constant="16" id="S29-t9-elL"/>
+                            <constraint firstItem="uwo-PJ-axo" firstAttribute="top" secondItem="jQJ-c0-Uwg" secondAttribute="bottom" constant="10" id="S29-t9-elL"/>
                             <constraint firstItem="tSZ-ED-dm4" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="16" id="S80-4u-Bbb"/>
                             <constraint firstItem="uYL-0g-rMi" firstAttribute="top" secondItem="RBH-fn-KRV" secondAttribute="bottom" constant="16" id="Syz-TF-4A5"/>
                             <constraint firstItem="fAD-ib-CyU" firstAttribute="leading" secondItem="uYL-0g-rMi" secondAttribute="trailing" constant="10" id="T58-jZ-2ZP"/>
@@ -207,7 +207,7 @@
                             <constraint firstItem="ZSZ-hy-qOe" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="16" id="jnR-TH-tql"/>
                             <constraint firstAttribute="trailing" secondItem="1FP-Xi-Xbe" secondAttribute="trailing" constant="16" id="kXo-ZK-vg5"/>
                             <constraint firstAttribute="trailing" secondItem="wOO-qz-9aS" secondAttribute="trailing" constant="16" id="lV8-AV-suK"/>
-                            <constraint firstItem="uwo-PJ-axo" firstAttribute="top" secondItem="EyM-BQ-f6m" secondAttribute="bottom" constant="16" id="ngk-Ls-CVU"/>
+                            <constraint firstItem="uwo-PJ-axo" firstAttribute="top" secondItem="EyM-BQ-f6m" secondAttribute="bottom" constant="10" id="ngk-Ls-CVU"/>
                             <constraint firstAttribute="trailing" secondItem="EyM-BQ-f6m" secondAttribute="trailing" constant="16" id="nsx-0f-ASM"/>
                             <constraint firstItem="hln-9U-Ubr" firstAttribute="top" secondItem="uYL-0g-rMi" secondAttribute="bottom" constant="16" id="o6x-eM-p6L"/>
                             <constraint firstItem="uYL-0g-rMi" firstAttribute="leading" secondItem="hgV-dX-faU" secondAttribute="leading" constant="16" id="pSo-Wz-uMR"/>
@@ -228,7 +228,9 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="gZN-sa-7P5"/>
+                    <navigationItem key="navigationItem" id="gZN-sa-7P5">
+                        <barButtonItem key="backBarButtonItem" title=" " id="fDE-JP-J5S"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="dateLabel" destination="1FP-Xi-Xbe" id="Xse-ld-C3J"/>
                         <outlet property="eventImageView" destination="wOO-qz-9aS" id="ILR-dK-Dy1"/>
@@ -245,10 +247,10 @@
             </objects>
             <point key="canvasLocation" x="1602" y="-327"/>
         </scene>
-        <!--View Controller-->
+        <!--Event Web View Controller-->
         <scene sceneID="Y13-IX-Vjy">
             <objects>
-                <viewController id="vLA-2R-oJ4" sceneMemberID="viewController">
+                <viewController id="vLA-2R-oJ4" customClass="LOCEventWebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FqR-e7-Wk0"/>
                         <viewControllerLayoutGuide type="bottom" id="9Vy-wv-9YW"/>
@@ -270,7 +272,9 @@
                             <constraint firstAttribute="trailing" secondItem="ppP-Yr-VSq" secondAttribute="trailing" id="tEA-hV-uQI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="pmV-RJ-MWo"/>
+                    <navigationItem key="navigationItem" id="pmV-RJ-MWo">
+                        <barButtonItem key="backBarButtonItem" title=" " id="aBW-Or-2th"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LnE-Rn-tC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -302,5 +306,5 @@
         <image name="ticket.png" width="64" height="64"/>
         <image name="time.png" width="64" height="64"/>
     </resources>
-    <color key="tintColor" red="0.11764705926179886" green="0.56470590829849243" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
