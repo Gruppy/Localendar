@@ -29,7 +29,7 @@ static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //[self setupNavigationBar];
+    self.title = [NSString stringWithFormat:@"%@のイベント", @"長崎県"];
     [self.eventsTableView registerNib:[UINib nibWithNibName:@"LOCEventTableViewCell" bundle:nil] forCellReuseIdentifier:@"LOCEventTableViewCell"];
     [self loadEvents];
 }
@@ -37,19 +37,6 @@ static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-}
-
-#pragma mark - Setup
-
-- (void)setupNavigationBar
-{
-    UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 400, 44)];
-    label.backgroundColor = [UIColor clearColor];
-    label.font = [UIFont boldSystemFontOfSize:17.0];
-    label.textAlignment = UITextAlignmentCenter;
-    label.textColor =[UIColor blackColor];
-    label.text = [NSString stringWithFormat:@"%@のイベント", @"長崎県"];
-    self.navigationItem.titleView = label;
 }
 
 #pragma mark - TableViewDelegate
