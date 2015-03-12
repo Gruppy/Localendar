@@ -25,7 +25,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="154" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0ln-1Y-lzf">
@@ -50,7 +50,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="eventsTableView" destination="0ln-1Y-lzf" id="GVW-c6-BqA"/>
-                        <segue destination="5eq-5z-k5C" kind="push" identifier="ToEventDetail" id="Fj3-dd-aAM"/>
+                        <segue destination="5eq-5z-k5C" kind="show" identifier="ToEventDetail" id="Fj3-dd-aAM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -66,7 +66,7 @@
                         <viewControllerLayoutGuide type="bottom" id="hpa-3Y-olD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hgV-dX-faU">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日にち" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FP-Xi-Xbe">
@@ -164,7 +164,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vLA-2R-oJ4" kind="push" identifier="ToEventWebPage" id="MBz-v7-uzw"/>
+                                    <action selector="showDetailButtonTapped:" destination="5eq-5z-k5C" eventType="touchUpInside" id="kE3-1t-sVA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -243,6 +243,7 @@
                         <outlet property="telLabel" destination="EyM-BQ-f6m" id="PJr-Qb-pO6"/>
                         <outlet property="ticketLabel" destination="GHZ-Yl-HC4" id="iFo-an-HH8"/>
                         <outlet property="timeLabel" destination="mcD-eQ-5wS" id="ojy-F9-lGr"/>
+                        <segue destination="vLA-2R-oJ4" kind="show" identifier="ToEventWebPage" id="VYD-HO-GrQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xmr-dd-XTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -258,7 +259,7 @@
                         <viewControllerLayoutGuide type="bottom" id="9Vy-wv-9YW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h0F-fE-QW8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppP-Yr-VSq">
@@ -285,7 +286,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Hiu-cl-w4V">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QyZ-cz-w1c" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QyZ-cz-w1c" customClass="LOCNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z1v-qP-nQA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -293,6 +294,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="navBar" destination="z1v-qP-nQA" id="cMT-fY-eP2"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sSk-98-7jb"/>
                     </connections>
                 </navigationController>

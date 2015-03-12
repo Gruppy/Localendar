@@ -41,6 +41,7 @@
 		EDD0C25D1AAC3ADE00BF4B2E /* nagasaki_brick_hall_international_discussion_room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C2531AAC3ADE00BF4B2E /* nagasaki_brick_hall_international_discussion_room.jpg */; };
 		EDD0C25E1AAC3ADE00BF4B2E /* nagasaki_brick_hall_lerge_hall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C2541AAC3ADE00BF4B2E /* nagasaki_brick_hall_lerge_hall.jpg */; };
 		EDD0C2601AAC3C3B00BF4B2E /* tel.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD0C25F1AAC3C3B00BF4B2E /* tel.png */; };
+		EDDBACB31AB192E300F18FC0 /* LOCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBACB21AB192E300F18FC0 /* LOCNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,9 +73,6 @@
 		ED375F191AAC969D00327E79 /* ceremony.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ceremony.png; sourceTree = "<group>"; };
 		ED375F1A1AAC969D00327E79 /* festival.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = festival.png; sourceTree = "<group>"; };
 		ED375F1D1AAC96B300327E79 /* ticket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticket.png; sourceTree = "<group>"; };
-		ED375F211AAC9F2D00327E79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		ED624B0E1AAC779100C4A392 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		ED624B141AAC785300C4A392 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ED925F901AA189660043DFE6 /* LOCEventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCEventDetailViewController.h; sourceTree = "<group>"; };
 		ED925F911AA189660043DFE6 /* LOCEventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCEventDetailViewController.m; sourceTree = "<group>"; };
 		EDAAAAD21AABE3B900E53FA5 /* ヒラギノ角ゴ Pro W3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ヒラギノ角ゴ Pro W3.otf"; sourceTree = "<group>"; };
@@ -101,6 +99,9 @@
 		EDD0C2541AAC3ADE00BF4B2E /* nagasaki_brick_hall_lerge_hall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nagasaki_brick_hall_lerge_hall.jpg; sourceTree = "<group>"; };
 		EDD0C25F1AAC3C3B00BF4B2E /* tel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tel.png; sourceTree = "<group>"; };
 		EDDBACB01AB1846D00F18FC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDDBACB11AB192E300F18FC0 /* LOCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCNavigationController.h; sourceTree = "<group>"; };
+		EDDBACB21AB192E300F18FC0 /* LOCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCNavigationController.m; sourceTree = "<group>"; };
+		EDDBACB41AB1937B00F18FC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F070049017508FB66F9B99B5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +170,8 @@
 				ED1E3CC61A8B63EE00DD66FA /* AppDelegate.m */,
 				EDC0C50E1A98C1F500F5ACF0 /* LOCEvent.h */,
 				EDC0C50F1A98C1F500F5ACF0 /* LOCEvent.m */,
+				EDDBACB11AB192E300F18FC0 /* LOCNavigationController.h */,
+				EDDBACB21AB192E300F18FC0 /* LOCNavigationController.m */,
 				ED1E3CE71A8B641300DD66FA /* LOCEventsViewController.h */,
 				ED1E3CE81A8B641300DD66FA /* LOCEventsViewController.m */,
 				ED925F901AA189660043DFE6 /* LOCEventDetailViewController.h */,
@@ -411,6 +414,7 @@
 				EDB1C2711A8B6E5D00F1E8F7 /* LOCEventTableViewCell.m in Sources */,
 				EDC0C5101A98C1F500F5ACF0 /* LOCEvent.m in Sources */,
 				ED1E3CE91A8B641300DD66FA /* LOCEventsViewController.m in Sources */,
+				EDDBACB31AB192E300F18FC0 /* LOCNavigationController.m in Sources */,
 				ED1E3CC41A8B63EE00DD66FA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +450,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				ED1E3CD11A8B63EE00DD66FA /* Base */,
-				ED624B0E1AAC779100C4A392 /* ja */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -454,8 +457,7 @@
 		ED624B151AAC785300C4A392 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED624B141AAC785300C4A392 /* ja */,
-				ED375F211AAC9F2D00327E79 /* en */,
+				EDDBACB41AB1937B00F18FC0 /* Base */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
