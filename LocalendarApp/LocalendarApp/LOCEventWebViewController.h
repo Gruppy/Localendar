@@ -10,4 +10,6 @@
 
 @interface LOCEventWebViewController : UIViewController
 
+@property (nonatomic) NSString *urlString;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "LOCEventDetailViewController.h"
+#import "LOCEventWebViewController.h"
 
 @interface LOCEventDetailViewController ()
 
@@ -57,6 +58,26 @@
     
     self.showDetailButton.layer.cornerRadius = 5.0f;
     [self.showDetailButton setTitle:[NSString stringWithFormat:@"%@のホームページヘ", NSLocalizedString(_event.mainPlace, nil)] forState:UIControlStateNormal];
+}
+
+#pragma mark - Action
+
+- (IBAction)showDetailButtonTapped:(id)sender
+{
+    [self performSegueWithIdentifier:@"ToEventWebPage" sender:self];
+}
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"ToEventWebPage"]) {
+        if ([segue.destinationViewController isKindOfClass:[LOCEventWebViewController class]]) {
+            NSLog(@"hoge");
+        }
+        LOCEventWebViewController *controller = (LOCEventWebViewController *)segue.destinationViewController;
+        controller.urlString = _event.url;
+    }
 }
 
 @end
