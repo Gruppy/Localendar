@@ -72,8 +72,6 @@
 		ED375F191AAC969D00327E79 /* ceremony.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ceremony.png; sourceTree = "<group>"; };
 		ED375F1A1AAC969D00327E79 /* festival.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = festival.png; sourceTree = "<group>"; };
 		ED375F1D1AAC96B300327E79 /* ticket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticket.png; sourceTree = "<group>"; };
-		ED375F1F1AAC9E3B00327E79 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ED375F201AAC9E3C00327E79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED375F211AAC9F2D00327E79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ED624B0E1AAC779100C4A392 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		ED624B141AAC785300C4A392 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -102,6 +100,7 @@
 		EDD0C2531AAC3ADE00BF4B2E /* nagasaki_brick_hall_international_discussion_room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nagasaki_brick_hall_international_discussion_room.jpg; sourceTree = "<group>"; };
 		EDD0C2541AAC3ADE00BF4B2E /* nagasaki_brick_hall_lerge_hall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nagasaki_brick_hall_lerge_hall.jpg; sourceTree = "<group>"; };
 		EDD0C25F1AAC3C3B00BF4B2E /* tel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tel.png; sourceTree = "<group>"; };
+		EDDBACB01AB1846D00F18FC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F070049017508FB66F9B99B5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -438,8 +437,7 @@
 		ED1E3CCB1A8B63EE00DD66FA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED375F1F1AAC9E3B00327E79 /* ja */,
-				ED375F201AAC9E3C00327E79 /* en */,
+				EDDBACB01AB1846D00F18FC0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

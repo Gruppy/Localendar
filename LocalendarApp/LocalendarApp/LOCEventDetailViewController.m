@@ -72,9 +72,6 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"ToEventWebPage"]) {
-        if ([segue.destinationViewController isKindOfClass:[LOCEventWebViewController class]]) {
-            NSLog(@"hoge");
-        }
         LOCEventWebViewController *controller = (LOCEventWebViewController *)segue.destinationViewController;
         controller.urlString = _event.url;
     }

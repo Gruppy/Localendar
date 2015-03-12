@@ -22,8 +22,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LK9-sF-LJF">
-                        <rect key="frame" x="10" y="11" width="70" height="70"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LK9-sF-LJF">
+                        <rect key="frame" x="6" y="6" width="70" height="77"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="250" id="HTX-mO-Odj"/>
                             <constraint firstAttribute="width" constant="70" id="d6A-IM-Dha"/>
@@ -34,25 +34,25 @@
                             </mask>
                         </variation>
                     </imageView>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RmC-CG-dqK">
-                        <rect key="frame" x="87" y="9" width="417" height="70"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RmC-CG-dqK">
+                        <rect key="frame" x="82" y="6" width="426" height="77"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="date.png" translatesAutoresizingMaskIntoConstraints="NO" id="4El-JC-uBt">
-                                <rect key="frame" x="4" y="54" width="12" height="12"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="date.png" translatesAutoresizingMaskIntoConstraints="NO" id="4El-JC-uBt">
+                                <rect key="frame" x="4" y="61" width="12" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="mkc-w5-P6J"/>
                                     <constraint firstAttribute="width" constant="12" id="x0l-gc-e5U"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="5UW-tc-iTR">
-                                <rect key="frame" x="67" y="54" width="12" height="12"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="5UW-tc-iTR">
+                                <rect key="frame" x="62" y="61" width="12" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="Nmf-n0-unR"/>
                                     <constraint firstAttribute="width" constant="12" id="VZ1-JJ-Fe4"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvk-ZZ-p3w">
-                                <rect key="frame" x="87" y="52" width="44" height="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvk-ZZ-p3w">
+                                <rect key="frame" x="78" y="61" width="38" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="38" id="sGf-CN-E34"/>
                                 </constraints>
@@ -60,27 +60,27 @@
                                 <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="第一タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="weR-vy-UKR">
-                                <rect key="frame" x="10" y="5" width="397" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第一タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="weR-vy-UKR">
+                                <rect key="frame" x="4" y="4" width="418" height="20"/>
                                 <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="20"/>
                                 <color key="textColor" white="0.10171669407894739" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Place" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjb-Kv-PJ3">
-                                <rect key="frame" x="168" y="52" width="254" height="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjb-Kv-PJ3">
+                                <rect key="frame" x="136" y="61" width="286" height="12"/>
                                 <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="12"/>
                                 <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="place.png" translatesAutoresizingMaskIntoConstraints="NO" id="FKj-zI-RdM">
-                                <rect key="frame" x="139" y="52" width="16" height="16"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place.png" translatesAutoresizingMaskIntoConstraints="NO" id="FKj-zI-RdM">
+                                <rect key="frame" x="120" y="61" width="12" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="6JH-sy-07y"/>
                                     <constraint firstAttribute="width" constant="12" id="xzE-zP-LLP"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12/31" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUh-Mm-UH3">
-                                <rect key="frame" x="24" y="54" width="38" height="12"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/31" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUh-Mm-UH3">
+                                <rect key="frame" x="20" y="61" width="38" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="38" id="Cc5-3a-lsE"/>
                                 </constraints>
@@ -88,8 +88,8 @@
                                 <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="第二タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="TLE-3V-dUM">
-                                <rect key="frame" x="10" y="24" width="409" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第二タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="TLE-3V-dUM">
+                                <rect key="frame" x="4" y="24" width="418" height="20"/>
                                 <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="20"/>
                                 <color key="textColor" white="0.1017166941" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
