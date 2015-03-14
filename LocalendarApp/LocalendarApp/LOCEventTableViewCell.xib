@@ -23,10 +23,11 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LK9-sF-LJF">
-                        <rect key="frame" x="6" y="6" width="70" height="77"/>
+                        <rect key="frame" x="4" y="12" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="250" id="HTX-mO-Odj"/>
-                            <constraint firstAttribute="width" constant="70" id="d6A-IM-Dha"/>
+                            <constraint firstAttribute="width" constant="50" id="d6A-IM-Dha"/>
+                            <constraint firstAttribute="height" constant="50" id="rKd-J2-jOY"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -35,7 +36,7 @@
                         </variation>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RmC-CG-dqK">
-                        <rect key="frame" x="82" y="6" width="426" height="77"/>
+                        <rect key="frame" x="58" y="6" width="450" height="77"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="date.png" translatesAutoresizingMaskIntoConstraints="NO" id="4El-JC-uBt">
                                 <rect key="frame" x="4" y="61" width="12" height="12"/>
@@ -45,14 +46,14 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="5UW-tc-iTR">
-                                <rect key="frame" x="62" y="61" width="12" height="12"/>
+                                <rect key="frame" x="76" y="61" width="12" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="Nmf-n0-unR"/>
                                     <constraint firstAttribute="width" constant="12" id="VZ1-JJ-Fe4"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvk-ZZ-p3w">
-                                <rect key="frame" x="78" y="61" width="38" height="12"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvk-ZZ-p3w">
+                                <rect key="frame" x="90" y="61" width="38" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="38" id="sGf-CN-E34"/>
                                 </constraints>
@@ -60,55 +61,55 @@
                                 <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="第一タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="weR-vy-UKR">
-                                <rect key="frame" x="4" y="4" width="418" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第一タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="weR-vy-UKR">
+                                <rect key="frame" x="4" y="4" width="442" height="20"/>
                                 <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="20"/>
                                 <color key="textColor" white="0.10171669407894739" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Place" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjb-Kv-PJ3">
-                                <rect key="frame" x="136" y="61" width="286" height="12"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjb-Kv-PJ3">
+                                <rect key="frame" x="146" y="61" width="300" height="12"/>
                                 <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="12"/>
                                 <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place.png" translatesAutoresizingMaskIntoConstraints="NO" id="FKj-zI-RdM">
-                                <rect key="frame" x="120" y="61" width="12" height="12"/>
+                                <rect key="frame" x="132" y="61" width="12" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="6JH-sy-07y"/>
                                     <constraint firstAttribute="width" constant="12" id="xzE-zP-LLP"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12/31" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUh-Mm-UH3">
-                                <rect key="frame" x="20" y="61" width="38" height="12"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第二タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="TLE-3V-dUM">
+                                <rect key="frame" x="4" y="24" width="442" height="20"/>
+                                <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="20"/>
+                                <color key="textColor" white="0.1017166941" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/31(木)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUh-Mm-UH3">
+                                <rect key="frame" x="18" y="61" width="58" height="12"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="38" id="Cc5-3a-lsE"/>
+                                    <constraint firstAttribute="width" constant="58" id="Cc5-3a-lsE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="12"/>
                                 <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="第二タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="TLE-3V-dUM">
-                                <rect key="frame" x="4" y="24" width="418" height="20"/>
-                                <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="20"/>
-                                <color key="textColor" white="0.1017166941" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jvk-ZZ-p3w" firstAttribute="leading" secondItem="5UW-tc-iTR" secondAttribute="trailing" constant="4" id="0as-ra-pd8"/>
+                            <constraint firstItem="jvk-ZZ-p3w" firstAttribute="leading" secondItem="5UW-tc-iTR" secondAttribute="trailing" constant="2" id="0as-ra-pd8"/>
                             <constraint firstItem="4El-JC-uBt" firstAttribute="leading" secondItem="RmC-CG-dqK" secondAttribute="leading" constant="4" id="1Zh-BS-H5a"/>
                             <constraint firstItem="FKj-zI-RdM" firstAttribute="leading" secondItem="jvk-ZZ-p3w" secondAttribute="trailing" constant="4" id="5eG-9f-Jth"/>
                             <constraint firstAttribute="trailing" secondItem="weR-vy-UKR" secondAttribute="trailing" constant="4" id="6Tg-yc-r9l"/>
-                            <constraint firstItem="5UW-tc-iTR" firstAttribute="leading" secondItem="HUh-Mm-UH3" secondAttribute="trailing" constant="4" id="6yI-uA-j8H"/>
+                            <constraint firstItem="5UW-tc-iTR" firstAttribute="leading" secondItem="HUh-Mm-UH3" secondAttribute="trailing" id="6yI-uA-j8H"/>
                             <constraint firstAttribute="bottom" secondItem="4El-JC-uBt" secondAttribute="bottom" constant="4" id="6zh-CY-ltc"/>
                             <constraint firstItem="TLE-3V-dUM" firstAttribute="top" secondItem="RmC-CG-dqK" secondAttribute="top" id="8na-Ae-kPJ"/>
                             <constraint firstItem="weR-vy-UKR" firstAttribute="top" secondItem="RmC-CG-dqK" secondAttribute="top" constant="4" id="9PO-wC-fKf"/>
                             <constraint firstItem="TLE-3V-dUM" firstAttribute="leading" secondItem="RmC-CG-dqK" secondAttribute="leading" constant="4" id="CTb-ud-IcL"/>
                             <constraint firstAttribute="bottom" secondItem="HUh-Mm-UH3" secondAttribute="bottom" constant="4" id="CcZ-b6-Hig"/>
                             <constraint firstAttribute="bottom" secondItem="Wjb-Kv-PJ3" secondAttribute="bottom" constant="4" id="FpZ-ds-vHa"/>
-                            <constraint firstItem="Wjb-Kv-PJ3" firstAttribute="leading" secondItem="FKj-zI-RdM" secondAttribute="trailing" constant="4" id="SOI-Ck-5fd"/>
+                            <constraint firstItem="Wjb-Kv-PJ3" firstAttribute="leading" secondItem="FKj-zI-RdM" secondAttribute="trailing" constant="2" id="SOI-Ck-5fd"/>
                             <constraint firstAttribute="bottom" secondItem="FKj-zI-RdM" secondAttribute="bottom" constant="4" id="SPc-6f-bhO"/>
                             <constraint firstAttribute="trailing" secondItem="Wjb-Kv-PJ3" secondAttribute="trailing" constant="4" id="VM4-o1-FLp"/>
                             <constraint firstItem="TLE-3V-dUM" firstAttribute="top" secondItem="weR-vy-UKR" secondAttribute="bottom" id="Vyg-ln-e6B"/>
@@ -117,7 +118,7 @@
                             <constraint firstAttribute="height" constant="70" id="pAQ-nH-VMv"/>
                             <constraint firstAttribute="bottom" secondItem="5UW-tc-iTR" secondAttribute="bottom" constant="4" id="seb-qs-CZL"/>
                             <constraint firstAttribute="bottom" secondItem="jvk-ZZ-p3w" secondAttribute="bottom" constant="4" id="tkY-sk-sLM"/>
-                            <constraint firstItem="HUh-Mm-UH3" firstAttribute="leading" secondItem="4El-JC-uBt" secondAttribute="trailing" constant="4" id="xYA-Ea-qA5"/>
+                            <constraint firstItem="HUh-Mm-UH3" firstAttribute="leading" secondItem="4El-JC-uBt" secondAttribute="trailing" constant="2" id="xYA-Ea-qA5"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -128,14 +129,19 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="LK9-sF-LJF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Owj-M8-4QV"/>
-                    <constraint firstAttribute="bottom" secondItem="LK9-sF-LJF" secondAttribute="bottom" constant="6" id="WV2-lW-HgH"/>
+                    <constraint firstItem="LK9-sF-LJF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Owj-M8-4QV"/>
+                    <constraint firstAttribute="bottom" secondItem="LK9-sF-LJF" secondAttribute="bottom" constant="20" id="WV2-lW-HgH"/>
                     <constraint firstAttribute="bottom" secondItem="RmC-CG-dqK" secondAttribute="bottom" constant="6" id="crG-XO-lNr"/>
                     <constraint firstItem="RmC-CG-dqK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="du7-XM-VWb"/>
-                    <constraint firstItem="LK9-sF-LJF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="kmD-wr-7On"/>
-                    <constraint firstItem="RmC-CG-dqK" firstAttribute="leading" secondItem="LK9-sF-LJF" secondAttribute="trailing" constant="6" id="msc-w1-Ea9"/>
+                    <constraint firstItem="LK9-sF-LJF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="kmD-wr-7On"/>
+                    <constraint firstItem="RmC-CG-dqK" firstAttribute="leading" secondItem="LK9-sF-LJF" secondAttribute="trailing" constant="4" id="msc-w1-Ea9"/>
                     <constraint firstAttribute="trailing" secondItem="RmC-CG-dqK" secondAttribute="trailing" constant="6" id="xsz-xY-wID"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="WV2-lW-HgH"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="dateLabel" destination="HUh-Mm-UH3" id="ta8-99-e0d"/>

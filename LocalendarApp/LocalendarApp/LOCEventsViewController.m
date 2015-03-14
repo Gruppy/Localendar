@@ -60,7 +60,7 @@ static NSString *const kLOCBaseURL = @"http://192.168.33.10/nagasaki.json";
         cell.typeImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", eventAtIndexPath.type[0]]];
         cell.firstTitleLabel.text = eventAtIndexPath.firstTitle;
         cell.secondTitleLabel.text = eventAtIndexPath.secondTitle;
-        cell.dateLabel.text = [NSString stringWithFormat:@"%@/%@ (%@)", eventAtIndexPath.startMonth, eventAtIndexPath.startDay, NSLocalizedString(eventAtIndexPath.startWeek, nil)];
+        cell.dateLabel.text = [NSString stringWithFormat:@"%@/%@(%@)", eventAtIndexPath.startMonth, eventAtIndexPath.startDay, NSLocalizedString(eventAtIndexPath.startWeek, nil)];
         cell.timeLabel.text = [NSString stringWithFormat:@"%@:%@", eventAtIndexPath.startHour, eventAtIndexPath.startMinute];
         cell.placeLabel.text = NSLocalizedString(eventAtIndexPath.mainPlace, nil);
     }
