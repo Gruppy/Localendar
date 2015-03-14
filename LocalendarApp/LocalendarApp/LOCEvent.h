@@ -22,14 +22,15 @@
 @property (nonatomic, retain) NSNumber *endMonth;
 @property (nonatomic, retain) NSNumber *endDay;
 @property (nonatomic, retain) NSString *endWeek;
-@property (nonatomic, retain) NSNumber *startHour;
-@property (nonatomic, retain) NSNumber *startMinute;
-@property (nonatomic, retain) NSNumber *endHour;
-@property (nonatomic, retain) NSNumber *endMinute;
+@property (nonatomic, retain) NSString *startHour;
+@property (nonatomic, retain) NSString *startMinute;
+@property (nonatomic, retain) NSString *endHour;
+@property (nonatomic, retain) NSString *endMinute;
 @property (nonatomic, retain) NSString *mainPlace;
 @property (nonatomic, retain) NSString *detailPlace;
 @property (nonatomic, retain) NSString *ticket;
 @property (nonatomic, retain) NSString *tel;
+@property (nonatomic, retain) NSString *reference;
 @property (nonatomic, retain) NSString *url;
 @property (nonatomic, retain) NSArray *type;
 

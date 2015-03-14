@@ -24,7 +24,8 @@
 
 @implementation LOCEventsViewController
 
-static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json";
+static NSString *const kLOCBaseURL = @"http://192.168.33.10/nagasaki.json";
+//static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json";
 
 - (void)viewDidLoad
 {
@@ -101,7 +102,49 @@ static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json
 - (LOCEvent *)createEventWithJSONDic:(NSMutableDictionary *)JSONDic
 {
     LOCEvent *event = [[LOCEvent alloc] init];
-
+    
+    event.identifier = JSONDic[@"id"];
+    
+    event.prefecture = JSONDic[@"prefecture"];
+    
+    NSDictionary *eventTitle = JSONDic[@"title"];
+    event.firstTitle = eventTitle[@"first"];
+    event.secondTitle = eventTitle[@"second"];
+    
+    NSDictionary *eventDate = JSONDic[@"date"];
+    NSDictionary *eventDateStart = eventDate[@"start"];
+    event.startYear = eventDateStart[@"year"];
+    event.startMonth = eventDateStart[@"month"];
+    event.startDay = eventDateStart[@"day"];
+    event.startWeek = eventDateStart[@"week"];
+    NSDictionary *eventDateEnd = eventDate[@"end"];
+    event.endYear = eventDateEnd[@"year"];
+    event.endMonth = eventDateStart[@"month"];
+    event.endDay = eventDateEnd[@"day"];
+    event.endWeek = eventDateEnd[@"week"];
+    
+    NSDictionary *eventTime = JSONDic[@"time"];
+    NSDictionary *eventTimeStart = eventTime[@"start"];
+    event.startHour = eventTimeStart[@"hour"];
+    event.startMinute = eventTimeStart[@"minute"];
+    NSDictionary *eventTimeEnd = eventTime[@"end"];
+    event.endHour = eventTimeEnd[@"hour"];
+    event.endMinute = eventTimeEnd[@"minute"];
+    
+    NSDictionary *eventPlace = JSONDic[@"place"];
+    event.mainPlace = eventPlace[@"main"];
+    event.detailPlace = eventPlace[@"detail"];
+    
+    event.ticket = JSONDic[@"ticket"];
+    
+    NSDictionary *eventContact = JSONDic[@"tel"];
+    event.tel = eventContact[@"number"];
+    event.reference = eventContact[@"reference"];
+    
+    event.url = [JSONDic[@"url"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
+    event.type = JSONDic[@"type"];
+/*
     event.identifier = JSONDic[@"id"];
     
     event.prefecture = nil;
@@ -131,7 +174,7 @@ static NSString *const kLOCBaseURL = @"http://160.16.104.144:3000/hallinfos.json
     event.url = [JSONDic[@"url"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     event.type = JSONDic[@"type"];
-
+*/
     return event;
 }
 

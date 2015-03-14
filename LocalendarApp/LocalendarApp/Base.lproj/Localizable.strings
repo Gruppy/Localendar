@@ -6,6 +6,14 @@
   Copyright (c) 2015年 Gruppy. All rights reserved.
 */
 
+"mon" = "月";
+"tue" = "火";
+"wed" = "水";
+"thu" = "木";
+"fri" = "金";
+"sat" = "土";
+"sun" = "日";
+
 "arukas_sasebo" = "アルカス佐世保";
 "nagasaki_brick_hall" = "長崎ブリックホール";
 

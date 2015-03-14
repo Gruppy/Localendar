@@ -46,7 +46,7 @@
     NSString *eventPlace = [NSString stringWithFormat:@"%@_%@", _event.mainPlace, _event.detailPlace];
     self.eventImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", eventPlace]];
     
-    self.dateLabel.text = [NSString stringWithFormat:@"%@/%@ (%@)", _event.startMonth, _event.startDay, _event.startWeek];
+    self.dateLabel.text = [NSString stringWithFormat:@"%@/%@ (%@)", _event.startMonth, _event.startDay, NSLocalizedString(_event.startWeek, nil)];
     self.timeLabel.text = [NSString stringWithFormat:@"%@:%@", _event.startHour, _event.startMinute];
     self.placeLabel.text = [NSString stringWithFormat:@"%@ (%@)", NSLocalizedString(_event.mainPlace, nil), NSLocalizedString(_event.detailPlace, nil)];
     if (!_event.ticket) {
